@@ -1,6 +1,6 @@
 ---
 layout: default
-title: <Your Name> - Portfolio
+title: Connor Hyde - Portfolio
 permalink: /projects/
 ---
 
