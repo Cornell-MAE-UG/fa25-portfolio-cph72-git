@@ -6,7 +6,7 @@ title: Connor Hyde
 ## About Me
 
 
-![Profile Picture]({{ "assets/images/connor-profile.jpg" | relative_url }}){: class="profile-image"}
+![Profile Picture]({{ "assets/images/connor-profile.JPG" | relative_url }}){: class="profile-image"}
 
  
 My name is {{ site.name }}, and I am [your pitch paragraph about your passions, knowledge and interestst.] a mechanical engineering student at Cornell University.
