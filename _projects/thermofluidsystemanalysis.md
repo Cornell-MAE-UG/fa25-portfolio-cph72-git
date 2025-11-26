@@ -2,7 +2,6 @@
 layout: project
 title: Thermofluid System Analysis
 description: Counter flow vs. Parallel flow Heat Exchangers
-technologies: []
 image: /assets/images/heat-exchanger-collage.jpg
 ---
 
