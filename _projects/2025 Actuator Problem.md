@@ -46,7 +46,7 @@ This analysis produced the final rigid bar configuration and maximum load used f
 
 Rigid and flexible beam geometry used in the analysis:
 
-![HW5 Design]({{ site.baseurl }}/assets/images/HW5Design.jpeg)
+![HW5 Design]({{ site.baseurl }}/assets/images/Hw5Design.jpeg)
 
 ---
 
@@ -118,6 +118,6 @@ The W150x13.5 shape also has the smallest cross-sectional area (A = 1,730 mm²) 
 
 ### Step 2c – Final Beam Choice
 
-![HW12 Design]({{ site.baseurl }}/assets/images/HW12Design.jpeg)
+![HW12 Design]({{ site.baseurl }}/assets/images/Hw12Design.jpeg)
 
 ---
