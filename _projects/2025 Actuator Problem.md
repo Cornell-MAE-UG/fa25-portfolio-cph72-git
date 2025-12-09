@@ -108,37 +108,40 @@ Substituting L = 1.58 m and a = 0.75 m:
 
 This equation gives the maximum vertical deflection of the beam as a function of the transverse load components, material stiffness, and cross-section.
 
-### Step 2b) Beam selection for stiffness and mass efficiency
+### Step 2b – Beam Selection for Stiffness and Mass Efficiency
 
-For the flexible bar, I chose a rolled wide flange steel section **W150x13.5** as the beam.  
-The material is structural steel with Young's modulus
+The flexible bar was selected as a rolled wide flange steel section **W150x13.5**.  
+The material is structural steel with Young’s modulus:
 
-- \(E \approx 200 \text{ GPa}\).
+E = 200 GPa
 
-From the section table, the key properties of W150x13.5 are
+From the steel section table, the properties of the W150x13.5 beam are:
 
-- Area \(A = 1\,730 \text{ mm}^2\)  
-- Strong axis moment of inertia \(I_x = 6.83 \times 10^6 \text{ mm}^4 = 6.83 \times 10^{-6} \text{ m}^4\).
+Area:
+A = 1,730 mm²
 
-Using my deflection expression for the cantilever
+Strong-axis moment of inertia:
+Ix = 6.83 × 10⁶ mm⁴ = 6.83 × 10⁻⁶ m⁴
 
-\[
-\delta_{\max} = \frac{1}{E I_x}\big(1.315\,W_{\perp} + 0.374\,F_{\perp}\big)
-\]
+From Step 2a, the maximum beam deflection is:
 
-and the beam length \(L = 1.58 \text{ m}\), the deflection requirement is
+δmax = (1 / (E · I)) · (1.315 · W⊥ + 0.374 · F⊥)
 
-\[
-\delta_{\max} \le 0.02 L = 0.0316 \text{ m}.
-\]
+The allowable deflection is limited to 2 percent of the beam length:
 
-This gives the design condition
+δallow = 0.02 · L  
+δallow = 0.02 · 1.58  
+δallow = 0.0316 m
 
-\[
-1.315\,W_{\perp} + 0.374\,F_{\perp} \le 4.32 \times 10^{4} \text{ N}.
-\]
+Applying the deflection limit:
 
-For my chosen operating combination of lifted weight and actuator force, this inequality is satisfied, so the vertical deflection of the W150x13.5 beam is below 2 percent of its length. Among the available W150 shapes, W150x13.5 has the smallest cross sectional area and therefore the lowest mass per meter, so it is the most mass efficient section that still meets the deflection limit.
+(1 / (E · I)) · (1.315 · W⊥ + 0.374 · F⊥) ≤ 0.0316
+
+Substituting E = 200 × 10⁹ Pa and I = 6.83 × 10⁻⁶ m⁴:
+
+1.315 · W⊥ + 0.374 · F⊥ ≤ 4.32 × 10⁴ N
+
+This condition is satisfied for the operating actuator force and lifted weight in this design, so the vertical deflection of the W150x13.5 beam remains below 2 percent of the beam length. Since W150x13.5 is the lightest available W150 section, it is the most mass-efficient beam that satisfies the deflection requirement.
 
 #### Step 2 C) Final Design:
 ![HW12 Design](/assets/images/Hw12Design.jpeg)
