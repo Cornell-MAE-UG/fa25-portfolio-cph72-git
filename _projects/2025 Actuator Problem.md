@@ -46,7 +46,7 @@ This analysis produced the final rigid bar configuration and maximum load used f
 
 Rigid and flexible beam geometry used in the analysis:
 
-![HW5 Design](/assets/images/Hw5Design.jpeg)
+![HW5 Design](assets/images/Hw5Design.jpeg)
 
 ---
 
@@ -102,8 +102,6 @@ the requirement can be written as a minimum required moment of inertia:
 
 I_req > (1.315 · W⊥ + 0.374 · F⊥) / (0.02 · L · E)
 
----
-
 **Chosen Beam**
 
 To satisfy this, I selected a rolled wide-flange steel section **W150x13.5** with
@@ -120,6 +118,6 @@ The W150x13.5 shape also has the smallest cross-sectional area (A = 1,730 mm²) 
 
 ### Step 2c – Final Beam Choice
 
-![HW12 Design](/assets/images/Hw12Design.jpeg)
+![HW12 Design](assets/images/Hw12Design.jpeg)
 
 ---
