@@ -1,0 +1,7 @@
+---
+layout: project
+title: Actuator Height/Weight Optimization
+description: Design for lifting a weight the highest height
+image: /assets/images/HW 5 Design.jpeg
+---
+**Objective** This project involved designing a planar lifting mechanism within a fixed 150 cm by 50 cm design space using a rigid bar, three pin supports with two mounted on the ground, and a linear actuator selected from an online industrial catalog using only its maximum force rating. The objective was to lift the maximum possible weight to the greatest achievable height while satisfying all geometric and support constraints. In the first phase, the bar was treated as a rigid body and a full static analysis was performed to determine the optimal mechanism geometry, actuator placement, and resulting lifting capacity. The final rigid-body mechanism was documented through force balance equations, moment equilibrium, and a detailed design drawing. In the second phase, the bar was reanalyzed as a flexible beam subject to transverse loading from both the applied weight and actuator force. Maximum beam deflection was computed under clearly stated assumptions, and an optimized beam cross-section and material were selected to limit vertical deflection to less than 2 percent of the beam length while minimizing mass. The final beam design was presented with supporting calculations and engineering drawings.
