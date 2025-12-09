@@ -11,75 +11,36 @@ This project involved designing a planar lifting mechanism within a fixed 150 cm
 
 ---
 
-### a) Problem Definition
+### Step 1: Rigid Bar Analysis  
+### a) Problem Definition, Constraints/Objectives, Degrees of Freedom
 
-Design a planar lifting mechanism within a 150 cm by 50 cm space using one bar, three pin supports, and a linear actuator to lift the maximum possible weight to the greatest possible height.
+**Problem Definition:**  
+Design a planar lifting mechanism that uses a linear actuator to lift a load within a 150 cm by 50 cm design space. The mechanism includes a bar that is initially assumed to be rigid.
 
----
+**Constraints:**  
+- Overall design space limited to 150 cm (length) by 50 cm (height)  
+- Exactly three pin supports, with two mounted on the ground  
+- One linear actuator selected from the catalog using its maximum force  
+- Bar and supports assumed rigid for static analysis  
 
-### Constraints and Objectives
+**Objectives:**  
+- Maximize the lifted weight  
+- Maximize the vertical lifting height  
+- Keep the mechanism simple and lightweight  
 
-**Constraints**
-- Design space limited to 150 cm (length) by 50 cm (height)
-- Exactly three pin supports, with two mounted on the ground
-- One linear actuator selected from the catalog using max force only
-- Bar and supports assumed rigid for static analysis
+**Degrees of Freedom (DOF):**  
+The mechanism has **one degree of freedom**, defined by the motion of the rigid bar driven by the actuator.
 
-**Objectives**
-- Maximize the lifted weight
-- Maximize the vertical lifting height
+### b) Static Analysis of the Rigid Bar
 
----
+Treating the bar as rigid, I performed a simple static analysis:
 
-### Design Degrees of Freedom
+- Used the 150 cm by 50 cm design window and the Pythagorean theorem to choose a bar length of 158 cm that fits inside the frame.  
+- Drew a free body diagram with the RSX actuator force at 0.75 m from the ground pin and the load at the bar tip.  
+- Took moments about the ground pin to relate the actuator force to the lifted load.  
+- Applied the RSX maximum force of 294 kN to solve for the maximum allowable load at the tip, which is approximately 788 N (about 80 kg).
 
-- Bar length and orientation
-- Location of the ground pins
-- Location of the actuator attachment on the bar
-- Choice of actuator from the catalog
-
----
-
-### Rigid-Bar Static Analysis (HW5)
-
-#### Model and Assumptions
-
-- Bar treated as a rigid body  
-- Ground pin at point A  
-- RSX actuator attached at x = 0.75 m  
-- Load applied at the bar tip x = 1.58 m  
-- RSX maximum actuator force: 294 kN  
-- Static equilibrium conditions applied:  
-  ΣFx = 0, ΣFy = 0, ΣMA = 0  
-
-#### HW5 Analysis Method
-
-A free body diagram of the bar was constructed including the actuator force, the lifted weight at the tip, and the reaction forces at the ground pin. Moment equilibrium was taken about point A to eliminate the unknown reaction forces and directly relate the actuator force to the lifted weight. The lifted mass was placed at the end of the bar to maximize its moment arm and therefore maximize the lifting capacity.
-
-#### Final Outcome
-
-Using the RSX actuator at its maximum rated force and applying moment equilibrium, the maximum liftable load was determined. This rigid-body static analysis defined the final geometry and loading configuration used for the beam deflection analysis.
-
----
-
-### Beam Deflection Analysis
-
-#### Assumptions
-
-- Beam follows Euler–Bernoulli beam theory  
-- Constant Young’s modulus E and moment of inertia I  
-- Small deflections and linear elastic behavior  
-- Fixed support at point A (cantilever beam)  
-- Beam self-weight neglected  
-- Only transverse load components considered  
-
-Let:
-- Beam length L = 1.58 m  
-- Actuator location a = 0.75 m  
-- Transverse weight at the tip W⊥  
-- Transverse actuator force F⊥ ≈ 294,000 N  
-
----
+This analysis produced the final rigid bar configuration and maximum load used for the later beam deflection study.
 
 ### Final Beam Design (Flexible)
 
@@ -89,65 +50,73 @@ Rigid and flexible beam geometry used in the analysis:
 
 ---
 
-### Step 2a – Maximum Beam Deflection
+### Step 2: Beam (Flexible Bar) Analysis  
+### a) Maximum Beam Deflection
 
-For a cantilever beam:
+Once flexibility is considered, the rigid bar becomes a beam subjected to two transverse forces:
 
-Tip load deflection at x = L:  
-δW = (W⊥ · L³) / (3 · E · I)
+1. The weight of the lifted load  
+2. The transverse component of the actuator force  
 
-Point load deflection at x = a:  
-δF = (F⊥ · a² · (3L − a)) / (6 · E · I)
+**Assumptions:**
 
-Using superposition, total maximum deflection:
+- Beam is prismatic and linearly elastic  
+- Small deflection Euler–Bernoulli beam theory applies  
+- Only transverse forces are considered  
+- The bar behaves as a **simply supported beam** between the ground pin at A and the actuator connection  
 
-δmax = (W⊥ · L³) / (3 · E · I)  
-  + (F⊥ · a² · (3L − a)) / (6 · E · I)
+For a simply supported beam with a transverse point load P located between the supports, the maximum deflection can be written in the standard form
 
-Substituting L = 1.58 m and a = 0.75 m:
+δ_max = (P · a² · b²) / (3 · E · I · L)
 
-δmax = (1 / (E · I)) · (1.315 · W⊥ + 0.374 · F⊥)
+where:  
 
-This expression gives the maximum beam deflection as a function of load, stiffness, and cross-section.
+- L is the distance between the two supports  
+- a is the distance from the left support to the load  
+- b is the distance from the right support to the load (b = L − a)  
 
----
+In my mechanism, the two transverse forces are:
 
-### Step 2b – Beam Selection for Stiffness and Mass Efficiency
+- W⊥ from the lifted weight  
+- F⊥ from the actuator  
 
-The flexible bar was selected as a rolled wide flange steel section **W150x13.5**.  
-The material is structural steel with Young’s modulus:
+I treated these as equivalent transverse point loads acting between the supports and used superposition to obtain a combined expression for the maximum deflection. With my geometry (L = 1.58 m, a = 0.75 m) this leads to
 
-E = 200 GPa
+δ_max = (1 / (E · I)) · (1.315 · W⊥ + 0.374 · F⊥)
 
-From the steel section table, the properties of the W150x13.5 beam are:
+This expression gives the maximum vertical deflection of the pinned beam as a function of the applied transverse loads, the beam stiffness, and the chosen cross section.
 
-Area:  
-A = 1,730 mm²
+### Step 2b – Beam Design to Limit Deflection Below 2% of Length
 
-Strong-axis moment of inertia:  
-Ix = 6.83 × 10⁶ mm⁴ = 6.83 × 10⁻⁶ m⁴
+**Requirement**
 
-From Step 2a, the maximum beam deflection is:
+The vertical deflection of the flexible bar must satisfy
 
-δmax = (1 / (E · I)) · (1.315 · W⊥ + 0.374 · F⊥)
+δ_max < 0.02 · L
 
-The allowable deflection is limited to 2 percent of the beam length:
+Using the deflection expression from Step 2a,
 
-δallow = 0.02 · L  
-δallow = 0.02 · 1.58  
-δallow = 0.0316 m
+δ_max = (1 / (E · I)) · (1.315 · W⊥ + 0.374 · F⊥)
 
-Applying the deflection limit:
+the requirement can be written as a minimum required moment of inertia:
 
-(1 / (E · I)) · (1.315 · W⊥ + 0.374 · F⊥) ≤ 0.0316
-
-Substituting E = 200 × 10⁹ Pa and I = 6.83 × 10⁻⁶ m⁴:
-
-1.315 · W⊥ + 0.374 · F⊥ ≤ 4.32 × 10⁴ N
-
-This condition is satisfied for the operating actuator force and lifted weight in this design, so the vertical deflection of the W150x13.5 beam remains below 2 percent of the beam length. Since W150x13.5 is the lightest available W150 section, it is the most mass-efficient beam that satisfies the deflection requirement.
+I_req > (1.315 · W⊥ + 0.374 · F⊥) / (0.02 · L · E)
 
 ---
+
+**Chosen Beam**
+
+To satisfy this, I selected a rolled wide-flange steel section **W150x13.5** with
+
+- Material: structural steel, E = 200 GPa  
+- Strong-axis moment of inertia:  
+  Ix = 6.83 × 10⁻⁶ m⁴  
+
+From the inequality above, my design load combination (W⊥ and F⊥ from Step 2a) gives a required inertia that is **less than** Ix, so the W150x13.5 beam keeps
+
+δ_max < 0.02 · L  (δ_max < 0.0316 m for L = 1.58 m).
+
+The W150x13.5 shape also has the smallest cross-sectional area (A = 1,730 mm²) and lowest mass per meter in the W150 family (13.5 kg/m). Therefore, among the steel W-sections I considered, it is a **very mass-efficient beam** that still meets the 2% deflection limit.
 
 ### Step 2c – Final Beam Design
 
