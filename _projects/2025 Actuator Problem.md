@@ -2,7 +2,7 @@
 layout: project
 title: Actuator Height/Weight Optimization
 description: Design for lifting a weight the highest height
-image: /assets/images/HW5Design.jpeg
+image: /assets/images/TOL-8674-RSX080-RSX096-no-background-600x541.png
 ---
 
 ## Objective
