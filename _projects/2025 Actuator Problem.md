@@ -118,7 +118,7 @@ From the inequality above, my design load combination (W⊥ and F⊥ from Step 2
 
 The W150x13.5 shape also has the smallest cross-sectional area (A = 1,730 mm²) and lowest mass per meter in the W150 family (13.5 kg/m). Therefore, among the steel W-sections I considered, it is a **very mass-efficient beam** that still meets the 2% deflection limit.
 
-### Step 2c – Final Beam Design
+### Step 2c – Final Beam Choice
 
 ![HW12 Design](/assets/images/Hw12Design.jpeg)
 
