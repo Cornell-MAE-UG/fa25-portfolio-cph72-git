@@ -83,6 +83,8 @@ Let:
 
 ### Final Beam Design (Flexible)
 
+Rigid and flexible beam geometry used in the analysis:
+
 ![HW5 Design](/assets/images/Hw5Design.jpeg)
 
 ---
@@ -106,7 +108,9 @@ Substituting L = 1.58 m and a = 0.75 m:
 
 δmax = (1 / (E · I)) · (1.315 · W⊥ + 0.374 · F⊥)
 
-This equation gives the maximum vertical deflection of the beam as a function of the transverse load components, material stiffness, and cross-section.
+This expression gives the maximum beam deflection as a function of load, stiffness, and cross-section.
+
+---
 
 ### Step 2b – Beam Selection for Stiffness and Mass Efficiency
 
@@ -117,10 +121,10 @@ E = 200 GPa
 
 From the steel section table, the properties of the W150x13.5 beam are:
 
-Area:
+Area:  
 A = 1,730 mm²
 
-Strong-axis moment of inertia:
+Strong-axis moment of inertia:  
 Ix = 6.83 × 10⁶ mm⁴ = 6.83 × 10⁻⁶ m⁴
 
 From Step 2a, the maximum beam deflection is:
@@ -143,7 +147,10 @@ Substituting E = 200 × 10⁹ Pa and I = 6.83 × 10⁻⁶ m⁴:
 
 This condition is satisfied for the operating actuator force and lifted weight in this design, so the vertical deflection of the W150x13.5 beam remains below 2 percent of the beam length. Since W150x13.5 is the lightest available W150 section, it is the most mass-efficient beam that satisfies the deflection requirement.
 
-#### Step 2 C) Final Design:
+---
+
+### Step 2c – Final Beam Design
+
 ![HW12 Design](/assets/images/Hw12Design.jpeg)
 
 ---
