@@ -1,7 +1,10 @@
 ---
 title: "Project X-termination of SLF"
-excerpt: ""
 collection: projects
+permalink: /projects/O3_ClientOutline/
+layout: single
+classes: wide
+author_profile: false
 ---
 
 
@@ -21,8 +24,14 @@ The long-term vision for this product is a cylindrical unit approximately the he
 
 #### Concept:
 **What it is:** Our device will use scents, sound frequencies, and sugary sap to lure spotted lanternflies away from the vines and into the trap.  
-**How it would be used:** 1. Using attractants, spotted lanternflies will either enter the trap or trigger a motion sensor that activates a low pressure vacuum to pull them inside. 2. A rotating blade guides them toward the center of the trap. 3. Continued rotation forces them downward through the center into the execution chamber. 4. A second rotating blade in the chamber kills the spotted lanternflies.  
-**Why it’s better than the status quo:** 1. It is a promising idea to remove them from the grape vines 2. It would be very easy to install and very low maintenance.  
+**How it would be used:**
+1. Using attractants, spotted lanternflies will either enter the trap or trigger a motion sensor that activates a low pressure vacuum to pull them inside.
+2. A rotating blade guides them toward the center of the trap.
+3. Continued rotation forces them downward through the center into the execution chamber.
+4. 4. A second rotating blade in the chamber kills the spotted lanternflies.  
+**Why it’s better than the status quo:**
+ 1. It is a promising idea to remove them from the grape vines
+ 2. It would be very easy to install and very low maintenance.  
 **End-of-semester proof-of-concept:** refer to proposed direction. 
 
 ### Key risks / unknowns
@@ -31,7 +40,6 @@ The long-term vision for this product is a cylindrical unit approximately the he
 - **Risk 2** — SLF Evasion. SLF are known to fly or jump when startled. The rotating mechanism involved in our trap might inadvertently trigger their flight response before they are successfully guided into the containment chamber. We can test this by using video analysis of the rotating mechanism, introducing SLF to the entry point and seeing what rotational speeds are optimal for reducing SLF evasion.
 
 ## Questions for the client
-Focus on questions they can answer from lived experience.
 1. **What is the specific spacing of the vineyard? Are there places where the trap can be placed that will not interfere with the path of the harvester?**  
    *Decision affected:* This will determine whether we can disperse our traps throughout the vineyard or only put them around the edges.
 2. **Would you be comfortable incorporating manual labour into the operation?**  
