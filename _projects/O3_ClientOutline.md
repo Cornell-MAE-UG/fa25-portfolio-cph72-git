@@ -1,10 +1,7 @@
 ---
+layout: project
 title: "Project X-termination of SLF"
-collection: projects
-permalink: /projects/O3_ClientOutline/
-layout: single
-classes: wide
-author_profile: false
+description: Client Outreach 1 page writeup for team SLF Crushers
 ---
 
 
