@@ -24,14 +24,17 @@ The long-term vision for this product is a cylindrical unit approximately the he
 
 #### Concept:
 **What it is:** Our device will use scents, sound frequencies, and sugary sap to lure spotted lanternflies away from the vines and into the trap.  
+
 **How it would be used:**
 1. Using attractants, spotted lanternflies will either enter the trap or trigger a motion sensor that activates a low pressure vacuum to pull them inside.
 2. A rotating blade guides them toward the center of the trap.
 3. Continued rotation forces them downward through the center into the execution chamber.
-4. 4. A second rotating blade in the chamber kills the spotted lanternflies.  
+4.  A second rotating blade in the chamber kills the spotted lanternflies.
+   
 **Why it’s better than the status quo:**
  1. It is a promising idea to remove them from the grape vines
- 2. It would be very easy to install and very low maintenance.  
+ 2. It would be very easy to install and very low maintenance.
+    
 **End-of-semester proof-of-concept:** refer to proposed direction. 
 
 ### Key risks / unknowns
