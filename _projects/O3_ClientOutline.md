@@ -4,19 +4,6 @@ excerpt: ""
 collection: projects
 ---
 
-<!--
-Compile to PDF (example):
-  pandoc O3_ClientOutline_example_submission.md -o O3_ClientOutline.pdf
--->
-
-```yaml
-fontsize: 10.5pt
-geometry: margin=0.7in
-papersize: letter
-pagestyle: empty
-header-includes:
-  - \pagenumbering{gobble}
-```
 
 # Project X-termination of SLF
 
