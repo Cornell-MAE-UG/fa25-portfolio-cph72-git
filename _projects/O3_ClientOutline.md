@@ -39,8 +39,6 @@ Focus on questions they can answer from lived experience.
 3. **<Are there any specific “organic” or other food-grade certifications your vineyard holds that would prohibit certain artificial scents or lures?>**  
    *Decision affected:* This will determine which lures we can use.
 
-\newpage
-
 # References and/or one figure
 
 ## References
