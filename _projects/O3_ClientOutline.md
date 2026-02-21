@@ -26,20 +26,18 @@ The long-term vision for this product is a cylindrical unit approximately the he
 **End-of-semester proof-of-concept:** refer to proposed direction. 
 
 ### Key risks / unknowns
-- <Risk 1> — Competitive Attraction Failure. The trap may fail if the natural sugary phloem of the grapevines is more appealing than the artificial lure we create during the peak 3-week ripening period. How to test: Place SLF in a controlled environment with two targets: high sugar grapevine and our lure. Measure the percentage of SLF that choose the lure over the plant over a 24 hour period to determine capture efficiency ratio.
+- **Risk 1** — Competitive Attraction Failure. The trap may fail if the natural sugary phloem of the grapevines is more appealing than the artificial lure we create during the peak 3-week ripening period. How to test: Place SLF in a controlled environment with two targets: high sugar grapevine and our lure. Measure the percentage of SLF that choose the lure over the plant over a 24 hour period to determine capture efficiency ratio.
 
-- <Risk 2> — SLF Evasion. SLF are known to fly or jump when startled. The rotating mechanism involved in our trap might inadvertently trigger their flight response before they are successfully guided into the containment chamber. We can test this by using video analysis of the rotating mechanism, introducing SLF to the entry point and seeing what rotational speeds are optimal for reducing SLF evasion.
+- **Risk 2** — SLF Evasion. SLF are known to fly or jump when startled. The rotating mechanism involved in our trap might inadvertently trigger their flight response before they are successfully guided into the containment chamber. We can test this by using video analysis of the rotating mechanism, introducing SLF to the entry point and seeing what rotational speeds are optimal for reducing SLF evasion.
 
 ## Questions for the client
 Focus on questions they can answer from lived experience.
-1. **<What is the specific spacing of the vineyard? Are there places where the trap can be placed that will not interfere with the path of the harvester?>**  
+1. **What is the specific spacing of the vineyard? Are there places where the trap can be placed that will not interfere with the path of the harvester?**  
    *Decision affected:* This will determine whether we can disperse our traps throughout the vineyard or only put them around the edges.
-2. **<Would you be comfortable incorporating manual labour into the operation?>**  
+2. **Would you be comfortable incorporating manual labour into the operation?**  
    *Decision affected:* This will determine whether the traps can be moved somewhere else during harvesting.
-3. **<Are there any specific “organic” or other food-grade certifications your vineyard holds that would prohibit certain artificial scents or lures?>**  
+3. **Are there any specific “organic” or other food-grade certifications your vineyard holds that would prohibit certain artificial scents or lures?**  
    *Decision affected:* This will determine which lures we can use.
-
-# References and/or one figure
 
 ## References
 
