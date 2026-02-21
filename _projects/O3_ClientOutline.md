@@ -4,9 +4,6 @@ title: "Project X-termination of SLF"
 description: Client Outreach 1 page writeup for team SLF Crushers
 ---
 
-
-# Project X-termination of SLF
-
 **Team:** SLF Crushers  
 **Client(s):** Cornell CALS Extension / E\&J Gallo Winery / National Grape  
 
