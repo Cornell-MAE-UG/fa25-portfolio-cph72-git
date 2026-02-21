@@ -1,20 +1,26 @@
+---
+title: "Project X-termination of SLF"
+excerpt: ""
+collection: projects
+---
+
 <!--
 Compile to PDF (example):
   pandoc O3_ClientOutline_example_submission.md -o O3_ClientOutline.pdf
 -->
 
----
+```yaml
 fontsize: 10.5pt
 geometry: margin=0.7in
 papersize: letter
 pagestyle: empty
 header-includes:
   - \pagenumbering{gobble}
----
+```
 
 # Project X-termination of SLF
 
-**Team:** SLF Crushers
+**Team:** SLF Crushers  
 **Client(s):** Cornell CALS Extension / E\&J Gallo Winery / National Grape  
 
 ### Problem statement 
@@ -27,9 +33,9 @@ We chose to address the problem of removing spotted lanternflies from grapevines
 The long-term vision for this product is a cylindrical unit approximately the height of vineyard trellises and roughly two feet in diameter, with scalable dimensions depending on the size and needs of the operation. The system would operate autonomously, continuously rotating to guide and trap insects drawn toward the device. By the end of the semester, we would like to produce a mini replica of our product. We can 3D print external parts, utilize servo motors, lace the interior with the attractive solution, and program the system to operate at the speed intended. This prototype will allow us to validate the mechanical design, examine the efficiency of trapping, and verify the operational feasibility.
 
 #### Concept:
-**What it is:** Our device will use scents, sound frequencies, and sugary sap to lure spotted lanternflies away from the vines and into the trap.
-**How it would be used:** 1. Using attractants, spotted lanternflies will either enter the trap or trigger a motion sensor that activates a low pressure vacuum to pull them inside. 2. A rotating blade guides them toward the center of the trap. 3. Continued rotation forces them downward through the center into the execution chamber. 4. A second rotating blade in the chamber kills the spotted lanternflies.
-**Why it’s better than the status quo:** 1. It is a promising idea to remove them from the grape vines 2. It would be very easy to install and very low maintenance.
+**What it is:** Our device will use scents, sound frequencies, and sugary sap to lure spotted lanternflies away from the vines and into the trap.  
+**How it would be used:** 1. Using attractants, spotted lanternflies will either enter the trap or trigger a motion sensor that activates a low pressure vacuum to pull them inside. 2. A rotating blade guides them toward the center of the trap. 3. Continued rotation forces them downward through the center into the execution chamber. 4. A second rotating blade in the chamber kills the spotted lanternflies.  
+**Why it’s better than the status quo:** 1. It is a promising idea to remove them from the grape vines 2. It would be very easy to install and very low maintenance.  
 **End-of-semester proof-of-concept:** refer to proposed direction. 
 
 ### Key risks / unknowns
