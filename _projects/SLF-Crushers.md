@@ -105,4 +105,4 @@ window.onclick = function(event) {
 }
 </script>
 
-assets/images/SLFCrushersPoster.png
+![SLF Crushers Poster]({{ site.baseurl }}/assets/images/SLFCrushersPoster.png)
