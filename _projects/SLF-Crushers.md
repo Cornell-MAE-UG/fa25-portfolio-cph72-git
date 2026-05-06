@@ -11,6 +11,6 @@ This project focuses on designing a rotating trap to lure spotted lanternflies a
 
 ## Project Milestones
 
-1. [Client Pitch](/fa25-portfolio-cph72-git/O3_ClinetOutline.pdf/)
-2. [Functional Prototype](../pages/annotated-Functional%2520Prototype%2520%25281%2529.pdf/)
-3. [Client Report](../pages/annotated-ODP6_SLF_Crushers-2.pdf/)
+1. [Client Pitch](/fa25-portfolio-cph72-git/assets/pdfs/Client_Outline.pdf/)
+2. [Functional Prototype](/fa25-portfolio-cph72-git/assets/pdfs/functional_prototype.pdf/)
+3. [Client Report](/fa25-portfolio-cph72-git/assets/pdfs/ODP6.pdf/)
