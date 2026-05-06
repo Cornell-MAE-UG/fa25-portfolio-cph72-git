@@ -104,3 +104,5 @@ window.onclick = function(event) {
   }
 }
 </script>
+
+assets/images/SLFCrushersPoster.png
