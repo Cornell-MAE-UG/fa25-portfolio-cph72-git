@@ -11,6 +11,96 @@ This project focuses on designing a rotating trap to lure spotted lanternflies a
 
 ## Project Milestones
 
-1. [Client Pitch]({{ site.baseurl }}/assets/pdfs/Client_Outline.pdf)
-2. [Functional Prototype]({{ site.baseurl }}/assets/pdfs/function_prototype.pdf)
-3. [Client Report]({{ site.baseurl }}/assets/pdfs/ODP6.pdf)
+<div class="milestone-links">
+  <button onclick="openPDF('{{ site.baseurl }}/assets/pdfs/Client_Outline.pdf')">Client Pitch</button>
+  <button onclick="openPDF('{{ site.baseurl }}/assets/pdfs/function_prototype.pdf')">Functional Prototype</button>
+  <button onclick="openPDF('{{ site.baseurl }}/assets/pdfs/ODP6.pdf')">Client Report</button>
+</div>
+
+<div id="pdfModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closePDF()">&times;</span>
+    <iframe id="pdfFrame" src=""></iframe>
+  </div>
+</div>
+
+<style>
+.milestone-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.milestone-links button {
+  width: fit-content;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3f4a6b;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.milestone-links button:hover {
+  background-color: #2f3854;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.modal-content {
+  position: relative;
+  background-color: white;
+  margin: 3% auto;
+  padding: 20px;
+  width: 85%;
+  height: 85%;
+  border-radius: 8px;
+}
+
+.close {
+  position: absolute;
+  right: 18px;
+  top: 8px;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+
+#pdfFrame {
+  width: 100%;
+  height: 95%;
+  border: none;
+}
+</style>
+
+<script>
+function openPDF(pdfPath) {
+  document.getElementById("pdfFrame").src = pdfPath;
+  document.getElementById("pdfModal").style.display = "block";
+}
+
+function closePDF() {
+  document.getElementById("pdfFrame").src = "";
+  document.getElementById("pdfModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+  const modal = document.getElementById("pdfModal");
+  if (event.target === modal) {
+    closePDF();
+  }
+}
+</script>
