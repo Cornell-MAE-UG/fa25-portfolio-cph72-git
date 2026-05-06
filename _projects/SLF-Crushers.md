@@ -109,4 +109,8 @@ window.onclick = function(event) {
 }
 </script>
 
-![SLF Crushers Poster]({{ site.baseurl }}/assets/images/SLFCrushersPoster.png)
+<h2>Project Poster</h2>
+
+<img src="{{ site.baseurl }}/assets/images/SLFCrushersPoster.png" 
+     alt="SLF Crushers Poster" 
+     style="width: 500px; max-width: 100%; height: auto; display: block; margin: 20px auto;">
