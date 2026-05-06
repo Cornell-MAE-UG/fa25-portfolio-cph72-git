@@ -7,7 +7,7 @@ image: /assets/images/slf-trap-image.png
 
 ## MAE2250 Project: SLF Rotating Bug Trap
 
-This project focuses on designing a rotating trap to lure spotted lanternflies away from grape vines. The goal is to reduce feeding damage to grape plants, protect grape quality, and create a solution that could be scaled for vineyard use.
+This project focused on designing a low-cost, scalable rotating trap to reduce spotted lanternfly damage in vineyards. The trap uses attractants to lure SLF toward a rotating reaper wall, which guides them through a peg system and drops them into a collection chamber. By capturing the insects alive, the design may also improve luring effectiveness because SLF are attracted to each other’s scents. Prototype testing showed strong performance across peg guidance, chamber drop, and motorized rotation tests, supporting the design’s potential for future full-scale vineyard use.
 
 ## Project Milestones
 
