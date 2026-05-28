@@ -6,7 +6,7 @@ description: A custom-designed pneumatic braking mechanism developed using CAD, 
 
 # Pneumatic Dual-Pad Brake System
 
-![Final Brake Assembly](images/final_assembly.jpg)
+![Final Brake Assembly](assets/images/brakes_assembly.jpeg)
 
 ---
 
@@ -34,7 +34,7 @@ The brake system was initially developed through iterative CAD modeling and mech
 
 ## Initial CAD Concepts
 
-![Early CAD Design](images/cad_concept.jpg)
+![Early CAD Design](assets/images/early_design.png)
 
 Description of the initial concept and what design decisions were explored.
 
@@ -42,44 +42,36 @@ Description of the initial concept and what design decisions were explored.
 
 ## Detailed Assembly Design
 
-![Brake CAD Assembly](images/cad_assembly.jpg)
+![Brake CAD Assembly](assets/images/brakes_design.png)
+![Brakes on Rails](assets/images/Brakes_Cad_w_rail.png)
 
-Discussion of:
-- Pneumatic cylinder integration
-- Spring return mechanism
-- Fastener placement
-- Structural support geometry
-- Brake pad mounting strategy
 
----
-
-## Exploded View
-
-![Exploded View](images/exploded_view.jpg)
-
-Explanation of how the assembly interfaces together and key design considerations during assembly.
-
----
+Improvements:
+- Easier C-Bracket to manufacture 
+- New double-acting mountable actuator
+- Springs attached to plates still allow retraction
+-Passed all preliminary Ansys tests
 
 # Finite Element Analysis (FEA)
 
 Finite element analysis was conducted in ANSYS to evaluate stress distribution, deformation, and structural integrity under expected loading conditions.
 
-## Stress Analysis
+## Factor of Safety Analysis
 
-![ANSYS Stress Plot](images/ansys_stress.jpg)
+![ANSYS FOS Analysis](assets/images/FOS_brakes.png)
+![ANSYS FOS Results](assets/images/FOS_brakes_scale.png)
 
-Discussion of:
-- Applied loading conditions
-- Boundary conditions
-- Peak stress regions
-- Safety considerations
+Loads:
+- Braking force (150N calculated to stop pod in 5 seconds)
+- Spring forces on brake plates and brake pad backing plates
+- Supports forces (Screws)
 
 ---
 
 ## Deformation Analysis
 
-![ANSYS Deformation Plot](images/ansys_deformation.jpg)
+![ANSYS Deformation Plot](assets/images/Ansys_image.jpg)
+![ANSYS Deformation Animation](assets/images/ansys_mov.svg)
 
 Explanation of observed deformation and any resulting design iterations.
 
