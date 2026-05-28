@@ -1,9 +1,12 @@
+---
+layout: project
+title: "Hyperloop Braking System Redesign"
+description: A custom-designed pneumatic braking mechanism developed using CAD, FEA validation, and precision manufacturing.
+---
 
 # Pneumatic Dual-Pad Brake System
 
 ![Final Brake Assembly](images/final_assembly.jpg)
-
-*A custom-designed pneumatic braking mechanism developed using CAD, FEA validation, and precision manufacturing.*
 
 ---
 
