@@ -85,8 +85,8 @@ Finite element analysis was conducted in ANSYS to evaluate stress distribution, 
       <img src="{{ "/assets/images/FOS_brakes_scale.png" | relative_url }}" alt="ANSYS FOS Scale" width="150">
     </td>
     <td>
-      <img src="{{ "/assets/images/Ansys_image.jpg" | relative_url }}" alt="ANSYS Deformation Plot" width="300"><br>
-      <img src="{{ "/assets/images/ansys_mov.svg" | relative_url }}" alt="ANSYS Deformation Animation" width="300">
+      <img src="{{ "/assets/images/Ansys_image.jpg" | relative_url }}" alt="ANSYS Deformation Plot" width="400"><br>
+      <img src="{{ "/assets/images/ansys_mov.svg" | relative_url }}" alt="ANSYS Deformation Animation" width="400">
     </td>
   </tr>
 </table>
