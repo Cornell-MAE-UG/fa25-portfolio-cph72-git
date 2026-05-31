@@ -37,7 +37,7 @@ The brake system was initially developed through iterative CAD modeling and mech
  
 | Initial CAD Concepts | Detailed Assembly Design |
 |---|---|
-| <img src="{{ "/assets/images/early_design.png" | relative_url }}" alt="Early CAD Design" width="400"> | <img src="{{ "/assets/images/brakes_design.png" | relative_url }}" alt="Brake CAD Assembly" width="400"> <img src="{{ "/assets/images/Brakes_Cad_w_rail.png" | relative_url }}" alt="Brakes on Rails" width="400"> |
+| <img src="{{ "/assets/images/early_design.png" | relative_url }}" alt="Early CAD Design" width="400"> <img src="{{ "/assets/images/old_design_rails.png" | relative_url }}" alt="Old Design on Rails" width="400"> | <img src="{{ "/assets/images/brakes_design.png" | relative_url }}" alt="Brake CAD Assembly" width="400"> <img src="{{ "/assets/images/Brakes_Cad_w_rail.png" | relative_url }}" alt="Brakes on Rails" width="400"> |
 | **Design Faults:** | **Improvements:** |
 | - Fault 1 placeholder | - Easier C-Bracket to manufacture |
 | - Fault 2 placeholder | - New double-acting mountable actuator |
