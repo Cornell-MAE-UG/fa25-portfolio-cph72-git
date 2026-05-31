@@ -4,6 +4,8 @@ title: "Hyperloop Braking System Redesign"
 description: A custom-designed pneumatic braking mechanism developed using CAD, FEA validation, and precision manufacturing.
 ---
 
+# Pneumatic Dual-Pad Brake System
+
 <img src="{{ "/assets/images/brakes_assembly.jpeg" | relative_url }}" alt="Final Brake Assembly" width="600">
 
 ---
@@ -37,12 +39,12 @@ The brake system was initially developed through iterative CAD modeling and mech
   </tr>
   <tr>
     <td>
-      <img src="{{ "/assets/images/early_design.png" | relative_url }}" alt="Early CAD Design" width="300"><br>
-      <img src="{{ "/assets/images/old_design_rails.png" | relative_url }}" alt="Old Design on Rails" width="300">
+      <img src="{{ "/assets/images/early_design.png" | relative_url }}" alt="Early CAD Design" width="400"><br>
+      <img src="{{ "/assets/images/old_design_rails.png" | relative_url }}" alt="Old Design on Rails" width="400">
     </td>
     <td>
-      <img src="{{ "/assets/images/brakes_design.png" | relative_url }}" alt="Brake CAD Assembly" width="300"><br>
-      <img src="{{ "/assets/images/Brakes_Cad_w_rail.png" | relative_url }}" alt="Brakes on Rails" width="300">
+      <img src="{{ "/assets/images/brakes_design.png" | relative_url }}" alt="Brake CAD Assembly" width="400"><br>
+      <img src="{{ "/assets/images/Brakes_Cad_w_rail.png" | relative_url }}" alt="Brakes on Rails" width="400">
     </td>
   </tr>
 </table>
@@ -81,8 +83,8 @@ Finite element analysis was conducted in ANSYS to evaluate stress distribution, 
   </tr>
   <tr>
     <td>
-      <img src="{{ "/assets/images/FOS_brakes.png" | relative_url }}" alt="ANSYS FOS Analysis" width="300"><br>
-      <img src="{{ "/assets/images/FOS_brakes_scale.png" | relative_url }}" alt="ANSYS FOS Scale" width="150">
+      <img src="{{ "/assets/images/FOS_brakes.png" | relative_url }}" alt="ANSYS FOS Analysis" width="400"><br>
+      <img src="{{ "/assets/images/FOS_brakes_scale.png" | relative_url }}" alt="ANSYS FOS Scale" width="200">
     </td>
     <td>
       <img src="{{ "/assets/images/Ansys_image.jpg" | relative_url }}" alt="ANSYS Deformation Plot" width="400"><br>
@@ -96,9 +98,8 @@ Finite element analysis was conducted in ANSYS to evaluate stress distribution, 
 - Spring forces on brake plates and brake pad backing plates
 - Supports forces (Screws)
 
-
 **Results:**
- 
+
 The FEA results confirmed the structural integrity of the brake system under expected loading conditions. Maximum deformation was found to be 6.6465e-6 m (~0.0002 in), indicating an effectively rigid structure with negligible deflection during braking. The minimum factor of safety was 6.5058, well above the acceptable threshold, demonstrating a robust design with significant safety margin.
 
 ---
@@ -110,6 +111,7 @@ Following the design validation process, the brake system components were manufa
 ## Machined Components
 
 ## PUT DRAWINGS PHOTOS HERE
+<img src="{{ "/assets/images/brakes_parts.jpg" | relative_url }}" alt="C-Bracket Top Plate and Brake Pad Backing Plate" width="600">
 <img src="{{ "/assets/images/no_pads_assembly.jpg" | relative_url }}" alt="Partial Assembly" width="600">
 
 Discussion of:
@@ -121,14 +123,14 @@ Discussion of:
 ---
 
 ## Final Assembly
- 
+
 <style>
   .video-modal-overlay {
     display: none;
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.75);
     z-index: 1000;
     justify-content: center;
     align-items: center;
@@ -136,41 +138,65 @@ Discussion of:
   .video-modal-overlay.active { display: flex; }
   .video-modal-box {
     position: relative;
-    background: #000;
-    border-radius: 8px;
-    overflow: hidden;
+    background: #111;
+    border-radius: 10px;
+    overflow: visible;
+    width: 480px;
     max-width: 90%;
+    padding: 12px;
   }
   .video-modal-close {
     position: absolute;
-    top: 8px; right: 12px;
-    font-size: 1.5rem;
-    color: #fff;
+    top: -16px; right: -16px;
+    width: 32px; height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    color: #111;
+    font-size: 1rem;
+    font-weight: bold;
     cursor: pointer;
-    z-index: 10;
-    background: none;
-    border: none;
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
   }
+  .video-modal-close:hover { background: #eee; }
+  .video-watch-link {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 24px;
+    background: #2c2c2c;
+    color: #fff !important;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #555;
+  }
+  .video-watch-link:hover { background: #444; }
 </style>
- 
-<a href="#" onclick="document.getElementById('videoModal').classList.add('active'); return false;">▶ Watch Brake Movement Demo</a>
- 
+
+<a class="video-watch-link" href="#" onclick="document.getElementById('videoModal').classList.add('active'); return false;">▶ Watch Brake Movement Demo</a>
+
 <div id="videoModal" class="video-modal-overlay" onclick="if(event.target===this){closeVideo();}">
   <div class="video-modal-box">
     <button class="video-modal-close" onclick="closeVideo()">✕</button>
-    <video id="modalVideo" controls width="800">
+    <video id="modalVideo" controls muted width="100%">
       <source src="{{ "assets/video/movement_vid.mp4" | relative_url }}" type="video/mp4">
     </video>
   </div>
 </div>
+
 <script>
   function closeVideo() {
     document.getElementById('videoModal').classList.remove('active');
     document.getElementById('modalVideo').pause();
   }
 </script>
- 
+
 Description of the completed assembly and overall system integration.
+
 ---
 
 # Results & Performance
