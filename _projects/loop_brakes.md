@@ -4,8 +4,6 @@ title: "Hyperloop Braking System Redesign"
 description: A custom-designed pneumatic braking mechanism developed using CAD, FEA validation, and precision manufacturing.
 ---
 
-# Pneumatic Dual-Pad Brake System
-
 <img src="{{ "/assets/images/brakes_assembly.jpeg" | relative_url }}" alt="Final Brake Assembly" width="600">
 
 ---
@@ -97,6 +95,11 @@ Finite element analysis was conducted in ANSYS to evaluate stress distribution, 
 - Braking force (150N calculated to stop pod in 5 seconds)
 - Spring forces on brake plates and brake pad backing plates
 - Supports forces (Screws)
+
+
+**Results:**
+ 
+The FEA results confirmed the structural integrity of the brake system under expected loading conditions. Maximum deformation was found to be 6.6465e-6 m (~0.0002 in), indicating an effectively rigid structure with negligible deflection during braking. The minimum factor of safety was 6.5058, well above the acceptable threshold, demonstrating a robust design with significant safety margin.
 
 ---
 
