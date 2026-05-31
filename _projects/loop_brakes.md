@@ -29,28 +29,20 @@ The project included the complete engineering workflow from initial concept gene
 
 ---
 
-# Design Process
+## Design Process
 
 The brake system was initially developed through iterative CAD modeling and mechanism evaluation. Special attention was given to actuator placement, pad alignment, spring return behavior, and assembly simplicity.
 
-## Initial CAD Concepts
-
-<img src="{{ "/assets/images/early_design.png" | relative_url }}" alt="Early CAD Design" width="600">
-
-Description of the initial concept and what design decisions were explored.
-
----
-
-## Detailed Assembly Design
-
-<img src="{{ "/assets/images/brakes_design.png" | relative_url }}" alt="Brake CAD Assembly" width="600">
-<img src="{{ "/assets/images/Brakes_Cad_w_rail.png" | relative_url }}" alt="Brakes on Rails" width="600">
-
-Improvements:
-- Easier C-Bracket to manufacture 
-- New double-acting mountable actuator
-- Springs attached to plates still allow retraction
-- Passed all preliminary Ansys tests
+The brake system was initially developed through iterative CAD modeling and mechanism evaluation. Special attention was given to actuator placement, pad alignment, spring return behavior, and assembly simplicity.
+ 
+| Initial CAD Concepts | Detailed Assembly Design |
+|---|---|
+| <img src="{{ "/assets/images/early_design.png" | relative_url }}" alt="Early CAD Design" width="400"> | <img src="{{ "/assets/images/brakes_design.png" | relative_url }}" alt="Brake CAD Assembly" width="400"> <img src="{{ "/assets/images/Brakes_Cad_w_rail.png" | relative_url }}" alt="Brakes on Rails" width="400"> |
+| **Design Faults:** | **Improvements:** |
+| - Fault 1 placeholder | - Easier C-Bracket to manufacture |
+| - Fault 2 placeholder | - New double-acting mountable actuator |
+| - Fault 3 placeholder | - Springs attached to plates still allow retraction |
+| - Fault 4 placeholder | - Passed all preliminary Ansys tests |
 
 # Finite Element Analysis (FEA)
 
