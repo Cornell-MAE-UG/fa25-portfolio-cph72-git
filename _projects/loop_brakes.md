@@ -6,7 +6,7 @@ description: A custom-designed pneumatic braking mechanism developed using CAD, 
 
 # Pneumatic Dual-Pad Brake System
 
-![Final Brake Assembly]({{ "/assets/images/brakes_assembly.jpeg" | relative_url }})
+<img src="{{ "/assets/images/brakes_assembly.jpeg" | relative_url }}" alt="Final Brake Assembly" width="600">
 
 ---
 
@@ -34,7 +34,7 @@ The brake system was initially developed through iterative CAD modeling and mech
 
 ## Initial CAD Concepts
 
-![Early CAD Design]({{ "/assets/images/early_design.png" | relative_url }})
+<img src="{{ "/assets/images/early_design.png" | relative_url }}" alt="Early CAD Design" width="600">
 
 Description of the initial concept and what design decisions were explored.
 
@@ -42,9 +42,8 @@ Description of the initial concept and what design decisions were explored.
 
 ## Detailed Assembly Design
 
-![Brake CAD Assembly]({{ "/assets/images/brakes_design.png" | relative_url }})
-![Brakes on Rails]({{ "/assets/images/Brakes_Cad_w_rail.png" | relative_url }})
-
+<img src="{{ "/assets/images/brakes_design.png" | relative_url }}" alt="Brake CAD Assembly" width="600">
+<img src="{{ "/assets/images/Brakes_Cad_w_rail.png" | relative_url }}" alt="Brakes on Rails" width="600">
 
 Improvements:
 - Easier C-Bracket to manufacture 
@@ -58,8 +57,8 @@ Finite element analysis was conducted in ANSYS to evaluate stress distribution, 
 
 ## Factor of Safety Analysis
 
-![ANSYS FOS Analysis]({{ "/assets/images/FOS_brakes.png" | relative_url }})
-![ANSYS FOS Results]({{ "/assets/images/FOS_brakes_scale.png" | relative_url }})
+<img src="{{ "/assets/images/FOS_brakes.png" | relative_url }}" alt="ANSYS FOS Analysis" width="600">
+<img src="{{ "/assets/images/FOS_brakes_scale.png" | relative_url }}" alt="ANSYS FOS Results" width="600">
 
 Loads:
 - Braking force (150N calculated to stop pod in 5 seconds)
@@ -70,8 +69,8 @@ Loads:
 
 ## Deformation Analysis
 
-![ANSYS Deformation Plot]({{ "/assets/images/Ansys_image.jpg" | relative_url }})
-![ANSYS Deformation Animation]({{ "/assets/images/ansys_mov.svg" | relative_url }})
+<img src="{{ "/assets/images/Ansys_image.jpg" | relative_url }}" alt="ANSYS Deformation Plot" width="600">
+<img src="{{ "/assets/images/ansys_mov.svg" | relative_url }}" alt="ANSYS Deformation Animation" width="600">
 
 Explanation of observed deformation and any resulting design iterations.
 
@@ -84,8 +83,8 @@ Following the design validation process, the brake system components were manufa
 ## Machined Components
 
 ## PUT DRAWINGS PHOTOS HERE
-![C-Bracket Top Plate and Brake Pad Backing Plate]({{ "/assets/images/brakes_parts.jpg" | relative_url }})
-![Partial Assembly]({{ "/assets/images/no_pads_assembly.jpg" | relative_url }})
+<img src="{{ "/assets/images/brakes_parts.jpg" | relative_url }}" alt="C-Bracket Top Plate and Brake Pad Backing Plate" width="600">
+<img src="{{ "/assets/images/no_pads_assembly.jpg" | relative_url }}" alt="Partial Assembly" width="600">
 
 Discussion of:
 - Materials used
@@ -97,7 +96,7 @@ Discussion of:
 
 ## Final Assembly
 
-<video controls width="100%">
+<video controls width="600">
   <source src="{{ "/assets/video/shortened_brakes.MOV" | relative_url }}" type="video/mp4">
 </video>
 
@@ -140,7 +139,7 @@ Potential future improvements include:
 
 | CAD Model | FEA | Final Assembly |
 |---|---|---|
-| ![]({{ "/assets/images/brakes_design.png" | relative_url }}) | ![]({{ "/assets/images/Ansys_image.jpg" | relative_url }}) | ![]({{ "/assets/images/brakes_assembly.jpeg" | relative_url }}) |
+| <img src="{{ "/assets/images/brakes_design.png" | relative_url }}" alt="CAD Model" width="200"> | <img src="{{ "/assets/images/Ansys_image.jpg" | relative_url }}" alt="FEA" width="200"> | <img src="{{ "/assets/images/brakes_assembly.jpeg" | relative_url }}" alt="Final Assembly" width="200"> |
 
 ---
 
