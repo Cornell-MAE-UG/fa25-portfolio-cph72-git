@@ -83,7 +83,8 @@ Following the design validation process, the brake system components were manufa
 
 ## Machined Components
 
-![Manufacturing Process](images/manufacturing.jpg)
+## PUT DRAWINGS PHOTOS HERE
+## MACHINING PHOTOS HERE
 
 Discussion of:
 - Materials used
