@@ -2,7 +2,7 @@
 
 layout: default
 title: Connor Hyde - Resume
-permalink: /cv/
+permalink: /resume/
 ---------------
 
 ## Resume
