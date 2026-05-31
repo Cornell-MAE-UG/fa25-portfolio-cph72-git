@@ -2,7 +2,6 @@
 layout: project
 title: "Hyperloop Braking System Redesign"
 description: A custom-designed pneumatic braking mechanism developed using CAD, FEA validation, and precision manufacturing.
-image: /assets/images/brakes_assembly.jpeg
 ---
 
 # Pneumatic Dual-Pad Brake System
@@ -29,16 +28,28 @@ The project included the complete engineering workflow from initial concept gene
 
 ---
 
-## Design Process
+# Design Process
 
 The brake system was initially developed through iterative CAD modeling and mechanism evaluation. Special attention was given to actuator placement, pad alignment, spring return behavior, and assembly simplicity.
 
-The brake system was initially developed through iterative CAD modeling and mechanism evaluation. Special attention was given to actuator placement, pad alignment, spring return behavior, and assembly simplicity.
- 
-| Initial CAD Concepts | Detailed Assembly Design |
-|---|---|
-| <img src="{{ "/assets/images/early_design.png" | relative_url }}" alt="Early CAD Design" width="400"> <img src="{{ "/assets/images/old_design_rails.png" | relative_url }}" alt="Old Design on Rails" width="400"> | <img src="{{ "/assets/images/brakes_design.png" | relative_url }}" alt="Brake CAD Assembly" width="400"> <img src="{{ "/assets/images/Brakes_Cad_w_rail.png" | relative_url }}" alt="Brakes on Rails" width="400"> |
-**Improvements in Final Design:**
+<table class="design-table">
+  <tr>
+    <th>Initial CAD Concepts</th>
+    <th>Detailed Assembly Design</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="{{ "/assets/images/early_design.png" | relative_url }}" alt="Early CAD Design" width="400"><br>
+      <img src="{{ "/assets/images/old_design_rails.png" | relative_url }}" alt="Old Design on Rails" width="400">
+    </td>
+    <td>
+      <img src="{{ "/assets/images/brakes_design.png" | relative_url }}" alt="Brake CAD Assembly" width="400"><br>
+      <img src="{{ "/assets/images/Brakes_Cad_w_rail.png" | relative_url }}" alt="Brakes on Rails" width="400">
+    </td>
+  </tr>
+</table>
+
+**Improvements:**
 - Easier C-Bracket to manufacture
 - New double-acting mountable actuator
 - Springs attached to plates still allow retraction
@@ -48,24 +59,44 @@ The brake system was initially developed through iterative CAD modeling and mech
 
 Finite element analysis was conducted in ANSYS to evaluate stress distribution, deformation, and structural integrity under expected loading conditions.
 
-## Factor of Safety Analysis
+<style>
+  .fea-table, .design-table { width: 100%; border-collapse: separate; border-spacing: 10px; }
+  .fea-table td, .design-table td {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    vertical-align: top;
+    text-align: center;
+  }
+  .fea-table th, .design-table th {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+  }
+</style>
 
-<img src="{{ "/assets/images/FOS_brakes.png" | relative_url }}" alt="ANSYS FOS Analysis" width="600">
-<img src="{{ "/assets/images/FOS_brakes_scale.png" | relative_url }}" alt="ANSYS FOS Results" width="600">
+<table class="fea-table">
+  <tr>
+    <th>FOS Analysis</th>
+    <th>Deformation Analysis</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="{{ "/assets/images/FOS_brakes.png" | relative_url }}" alt="ANSYS FOS Analysis" width="400"><br>
+      <img src="{{ "/assets/images/FOS_brakes_scale.png" | relative_url }}" alt="ANSYS FOS Scale" width="200">
+    </td>
+    <td>
+      <img src="{{ "/assets/images/Ansys_image.jpg" | relative_url }}" alt="ANSYS Deformation Plot" width="400"><br>
+      <img src="{{ "/assets/images/ansys_mov.svg" | relative_url }}" alt="ANSYS Deformation Animation" width="400">
+    </td>
+  </tr>
+</table>
 
-Loads:
+**Loads:**
 - Braking force (150N calculated to stop pod in 5 seconds)
 - Spring forces on brake plates and brake pad backing plates
 - Supports forces (Screws)
-
----
-
-## Deformation Analysis
-
-<img src="{{ "/assets/images/Ansys_image.jpg" | relative_url }}" alt="ANSYS Deformation Plot" width="600">
-<img src="{{ "/assets/images/ansys_mov.svg" | relative_url }}" alt="ANSYS Deformation Animation" width="600">
-
-Explanation of observed deformation and any resulting design iterations.
 
 ---
 
