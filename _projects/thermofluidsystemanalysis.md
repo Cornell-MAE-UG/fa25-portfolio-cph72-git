@@ -10,7 +10,7 @@ A heat exchanger is a device that transfers thermal energy between two fluids wh
 The way the fluids flow determines how the exchanger performs. In parallel flow, both fluids enter from the same side and travel in the same direction, so the temperature difference is highest at the start and drops off quickly. In counter-flow, the fluids travel in opposite directions, which keeps the temperature difference more consistent and improves overall heat transfer.
 In general, a heat exchanger’s role is to transfer thermal energy efficiently for heating, cooling, or energy recovery in applications like power plants, refrigeration systems, car radiators, and a wide range of industrial processes.
 
-
+<img src="{{ "/assets/images/heat-exchanger-collage.jpg" | relative_url }}" alt="Heat_Exchanger_Setup" width="600">
 
 
 ## Data
