@@ -123,7 +123,7 @@ Discussion of:
 ## Final Assembly
 
 <video controls width="600">
-  <source src="{{ "/assets/video/shortened_brakes.MOV" | relative_url }}" type="video/mp4">
+  <source src="{{ "assets/video/movement_vid.mp4" | relative_url }}" type="video/mp4">
 </video>
 
 Description of the completed assembly and overall system integration.
