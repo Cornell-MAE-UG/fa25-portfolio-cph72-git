@@ -6,7 +6,7 @@ description: A custom-designed pneumatic braking mechanism developed using CAD, 
 
 # Pneumatic Dual-Pad Brake System
 
-![Final Brake Assembly](assets/images/brakes_assembly.jpeg)
+![Final Brake Assembly](/assets/images/brakes_assembly.jpeg)
 
 ---
 
@@ -34,7 +34,7 @@ The brake system was initially developed through iterative CAD modeling and mech
 
 ## Initial CAD Concepts
 
-![Early CAD Design](assets/images/early_design.png)
+![Early CAD Design](/assets/images/early_design.png)
 
 Description of the initial concept and what design decisions were explored.
 
@@ -42,8 +42,8 @@ Description of the initial concept and what design decisions were explored.
 
 ## Detailed Assembly Design
 
-![Brake CAD Assembly](assets/images/brakes_design.png)
-![Brakes on Rails](assets/images/Brakes_Cad_w_rail.png)
+![Brake CAD Assembly](/assets/images/brakes_design.png)
+![Brakes on Rails](/assets/images/Brakes_Cad_w_rail.png)
 
 
 Improvements:
@@ -58,8 +58,8 @@ Finite element analysis was conducted in ANSYS to evaluate stress distribution, 
 
 ## Factor of Safety Analysis
 
-![ANSYS FOS Analysis](assets/images/FOS_brakes.png)
-![ANSYS FOS Results](assets/images/FOS_brakes_scale.png)
+![ANSYS FOS Analysis](/assets/images/FOS_brakes.png)
+![ANSYS FOS Results](/assets/images/FOS_brakes_scale.png)
 
 Loads:
 - Braking force (150N calculated to stop pod in 5 seconds)
@@ -70,8 +70,8 @@ Loads:
 
 ## Deformation Analysis
 
-![ANSYS Deformation Plot](assets/images/Ansys_image.jpg)
-![ANSYS Deformation Animation](assets/images/ansys_mov.svg)
+![ANSYS Deformation Plot](/assets/images/Ansys_image.jpg)
+![ANSYS Deformation Animation](/assets/images/ansys_mov.svg)
 
 Explanation of observed deformation and any resulting design iterations.
 
@@ -84,7 +84,8 @@ Following the design validation process, the brake system components were manufa
 ## Machined Components
 
 ## PUT DRAWINGS PHOTOS HERE
-## MACHINING PHOTOS HERE
+![C-Bracket Top Plate and Brake Pad Backing Plate](/assets/images/brakes_parts.jpg.)
+![Partial Assembly](/assets/images/no_pads_assembly.jpg)
 
 Discussion of:
 - Materials used
@@ -96,7 +97,7 @@ Discussion of:
 
 ## Final Assembly
 
-![Completed Brake System](images/final_brake.jpg)
+![Demonstration of Brakes Movement](/assets/video/shortened_brakes.MOV)
 
 Description of the completed assembly and overall system integration.
 
@@ -113,7 +114,10 @@ Potential future improvements include:
 - Enhanced mounting geometry
 
 ---
+## Next Steps
 
+
+---
 # Skills & Tools
 
 - SolidWorks
@@ -134,7 +138,7 @@ Potential future improvements include:
 
 | CAD Model | FEA | Final Assembly |
 |---|---|---|
-| ![](images/gallery1.jpg) | ![](images/gallery2.jpg) | ![](images/gallery3.jpg) |
+| ![](/assets/images/brakes_design.png) | ![](/assets/images/Ansys_image.jpg) | ![](/assets/images/brakes_assembly.jpeg) |
 
 ---
 
