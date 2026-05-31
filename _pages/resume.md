@@ -7,7 +7,7 @@ permalink: /resume/
 
 ## Resume
 
-[Download my Resume!]({{ "/assets/resume.pdf" | relative_url }}) in PDF format.
+[Download my Resume!]({{ "assets/Resume_ConnorHyde.pdf" | relative_url }}) in PDF format.
 
 **Connor Patrick Hyde**
 Walnut Creek, CA | (925) 499-5153 | [cph72@cornell.edu](mailto:cph72@cornell.edu)
