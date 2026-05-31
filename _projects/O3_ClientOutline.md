@@ -2,6 +2,7 @@
 layout: project
 title: "Project X-termination of SLF"
 description: Client Outreach 1 page writeup for team SLF Crushers
+image: assets/images/SLF-adult-wings-open.webp
 ---
 
 **Team:** SLF Crushers  
