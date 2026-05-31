@@ -121,13 +121,56 @@ Discussion of:
 ---
 
 ## Final Assembly
-
-<video controls width="600">
-  <source src="{{ "assets/video/movement_vid.mp4" | relative_url }}" type="video/mp4">
-</video>
-
+ 
+<style>
+  .video-modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+  }
+  .video-modal-overlay.active { display: flex; }
+  .video-modal-box {
+    position: relative;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 90%;
+  }
+  .video-modal-close {
+    position: absolute;
+    top: 8px; right: 12px;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+    background: none;
+    border: none;
+  }
+</style>
+ 
+<a href="#" onclick="document.getElementById('videoModal').classList.add('active'); return false;">▶ Watch Brake Movement Demo</a>
+ 
+<div id="videoModal" class="video-modal-overlay" onclick="if(event.target===this){closeVideo();}">
+  <div class="video-modal-box">
+    <button class="video-modal-close" onclick="closeVideo()">✕</button>
+    <video id="modalVideo" controls width="800">
+      <source src="{{ "assets/video/movement_vid.mp4" | relative_url }}" type="video/mp4">
+    </video>
+  </div>
+</div>
+<script>
+  function closeVideo() {
+    document.getElementById('videoModal').classList.remove('active');
+    document.getElementById('modalVideo').pause();
+  }
+</script>
+ 
 Description of the completed assembly and overall system integration.
-
 ---
 
 # Results & Performance
