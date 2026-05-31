@@ -110,7 +110,6 @@ Following the design validation process, the brake system components were manufa
 ## Machined Components
 
 ## PUT DRAWINGS PHOTOS HERE
-<img src="{{ "/assets/images/brakes_parts.jpg" | relative_url }}" alt="C-Bracket Top Plate and Brake Pad Backing Plate" width="600">
 <img src="{{ "/assets/images/no_pads_assembly.jpg" | relative_url }}" alt="Partial Assembly" width="600">
 
 Discussion of:
