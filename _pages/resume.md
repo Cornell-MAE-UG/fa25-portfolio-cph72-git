@@ -3,7 +3,7 @@
 layout: default
 title: Connor Hyde - Resume
 permalink: /resume/
----------------
+---
 
 ## Resume
 
