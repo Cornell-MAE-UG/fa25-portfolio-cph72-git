@@ -323,6 +323,11 @@ sourcing to maximize braking force within system constraints, and developing a w
 of pneumatic circuit behavior. A housing carriage is also being designed to package all 
 components within the pod's volume constraints.
 
+<div style="text-align: center;">
+  <img src="{{ "/assets/images/pneumatic_map.jpg" | relative_url }}" alt="Planned Pneumatic Circuit" width="450" style="border: 1px solid #ccc; border-radius: 8px; padding: 12px;">
+</div>
+assets/images/pneumatic_map.jpg
+
 Remaining steps include:
 - Refine off-the-shelf pneumatic component sourcing to maximize braking capacity
 - Assemble and integrate the pneumatic circuit
