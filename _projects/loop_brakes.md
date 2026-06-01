@@ -101,10 +101,11 @@ Finite element analysis was conducted in ANSYS to evaluate stress distribution, 
     <th>Deformation Analysis</th>
   </tr>
   <tr>
-<td>
-      <img src="{{ "/assets/images/FOS_brakes.png" | relative_url }}" alt="ANSYS FOS Analysis" width="400"><br><br>
-      <img src="{{ "/assets/images/FOS_brakes_scale.png" | relative_url }}" alt="ANSYS FOS Scale" width="200">
+    <td>
+      <img src="{{ "/assets/images/FOS_brakes.png" | relative_url }}" alt="ANSYS FOS Analysis" width="300"><br>
+      <img src="{{ "/assets/images/FOS_brakes_scale.png" | relative_url }}" alt="ANSYS FOS Scale" width="100">
     </td>
+    <td>
       <img src="{{ "/assets/images/Ansys_image(new).jpg" | relative_url }}" alt="ANSYS Deformation Plot" width="300"><br>
       <img src="{{ "/assets/images/ansys_mov.svg" | relative_url }}" 
      alt="ANSYS Deformation Animation" 
@@ -113,6 +114,7 @@ Finite element analysis was conducted in ANSYS to evaluate stress distribution, 
   </tr>
 </table>
 </div>
+
 
 **Loads:**
 - Braking force (150N calculated to stop pod in 5 seconds)
