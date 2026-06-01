@@ -19,11 +19,98 @@ This project involved the design, analysis, and manufacturing of a compact pneum
 The project included the complete engineering workflow from initial concept generation and CAD modeling to finite element analysis (FEA), machining, assembly, and testing.
 
 ---
-## Project Gallery
+# Project Gallery
 
-| CAD Model | FEA | Final Assembly |
-|---|---|---|
-| <img src="{{ "/assets/images/brakes_design.png" | relative_url }}" alt="CAD Model" width="200"> | <img src="{{ "/assets/images/Ansys_image(new).jpg" | relative_url }}" alt="FEA" width="200"> | <img src="{{ "/assets/images/brakes_assembly.jpeg" | relative_url }}" alt="Final Assembly" width="200"> |
+<style>
+  .gallery-slider {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  .gallery-track {
+    display: flex;
+    transition: transform 0.4s ease;
+  }
+  .gallery-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    font-size: 1.8rem;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    z-index: 10;
+  }
+  .gallery-btn:hover { background: rgba(0,0,0,0.8); }
+  .gallery-prev { left: 8px; }
+  .gallery-next { right: 8px; }
+  .gallery-dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .gallery-dots span {
+    display: inline-block;
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+  .gallery-dots span.active { background: #444; }
+</style>
+
+<div class="gallery-slider">
+  <div class="gallery-track" id="galleryTrack">
+    <div style="min-width: 100%; text-align: center; background: #111;">
+      <img src="{{ "/assets/images/brakes_design.png" | relative_url }}" alt="CAD Model" style="height: 400px; object-fit: contain;">
+      <p style="color: #fff; margin: 8px 0; font-weight: bold;">CAD Model</p>
+    </div>
+    <div style="min-width: 100%; text-align: center; background: #111;">
+      <img src="{{ "/assets/images/Ansys_image(new).jpg" | relative_url }}" alt="FEA" style="height: 400px; object-fit: contain;">
+      <p style="color: #fff; margin: 8px 0; font-weight: bold;">FEA</p>
+    </div>
+    <div style="min-width: 100%; text-align: center; background: #111;">
+      <img src="{{ "/assets/images/brakes_assembly.jpeg" | relative_url }}" alt="Final Assembly" style="height: 400px; object-fit: contain;">
+      <p style="color: #fff; margin: 8px 0; font-weight: bold;">Final Assembly</p>
+    </div>
+  </div>
+  <button class="gallery-btn gallery-prev" onclick="moveGallery(-1)">&#8249;</button>
+  <button class="gallery-btn gallery-next" onclick="moveGallery(1)">&#8250;</button>
+</div>
+<div class="gallery-dots" id="galleryDots">
+  <span class="active" onclick="goToSlide(0)"></span>
+  <span onclick="goToSlide(1)"></span>
+  <span onclick="goToSlide(2)"></span>
+</div>
+
+<script>
+  let currentSlide = 0;
+  const totalSlides = 3;
+
+  function moveGallery(dir) {
+    currentSlide = (currentSlide + dir + totalSlides) % totalSlides;
+    updateGallery();
+  }
+
+  function goToSlide(index) {
+    currentSlide = index;
+    updateGallery();
+  }
+
+  function updateGallery() {
+    document.getElementById('galleryTrack').style.transform = `translateX(-${currentSlide * 100}%)`;
+    document.querySelectorAll('#galleryDots span').forEach((dot, i) => {
+      dot.classList.toggle('active', i === currentSlide);
+    });
+  }
+</script>
 
 ---
 
