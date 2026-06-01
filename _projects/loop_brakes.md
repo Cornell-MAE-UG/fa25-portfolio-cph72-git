@@ -73,7 +73,7 @@ The project included the complete engineering workflow from initial concept gene
       <p style="color: #fff; margin: 8px 0; font-weight: bold;">CAD Model</p>
     </div>
     <div style="min-width: 100%; text-align: center; background: #111;">
-      <img src="{{ "/assets/images/Ansys_image(new).jpg" | relative_url }}" alt="FEA" style="height: 400px; object-fit: contain;">
+      <img src="{{ "/assets/images/ansys_mov.svg" | relative_url }}" alt="Ansys FEA" style="height: 400px; object-fit: contain;">
       <p style="color: #fff; margin: 8px 0; font-weight: bold;">FEA</p>
     </div>
     <div style="min-width: 100%; text-align: center; background: #111;">
