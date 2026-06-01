@@ -228,7 +228,9 @@ The FEA results confirmed the structural integrity of the brake system under exp
 Following the design validation process, the brake system components were manufactured and assembled using a combination of machining and standard fastening methods.
 
 
-<img src="{{ "/assets/images/no_pads_assembly.jpg" | relative_url }}" alt="Partial Assembly" width="450">
+<div style="text-align: center;">
+  <img src="{{ "/assets/images/no_pads_assembly.jpg" | relative_url }}" alt="Partial Assembly" width="450" style="border: 1px solid #ccc; border-radius: 8px; padding: 12px;">
+</div>
 
 The components were machined from aluminum stock using manual mills and manual lathes. Operations included milling, turning, drilling, and tapping, with additional finishing operations such as chamfering and countersinking. Raw stock was cut to size using a bandsaw prior to machining. All components were machined to a tolerance of ±0.05 in, with over 20 shop hours invested in fabrication.
 
