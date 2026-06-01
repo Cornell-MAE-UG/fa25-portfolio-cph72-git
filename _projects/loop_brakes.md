@@ -57,12 +57,12 @@ The brake system was initially developed through iterative CAD modeling and mech
   </tr>
   <tr>
     <td>
-      <img src="{{ "/assets/images/early_design.png" | relative_url }}" alt="Early CAD Design" width="400"><br>
-      <img src="{{ "/assets/images/old_design_rails.png" | relative_url }}" alt="Old Design on Rails" width="400">
+      <img src="{{ "/assets/images/early_design.png" | relative_url }}" alt="Early CAD Design" width="300"><br>
+      <img src="{{ "/assets/images/old_design_rails.png" | relative_url }}" alt="Old Design on Rails" width="300">
     </td>
     <td>
-      <img src="{{ "/assets/images/brakes_design.png" | relative_url }}" alt="Brake CAD Assembly" width="400"><br>
-      <img src="{{ "/assets/images/Brakes_Cad_w_rail.png" | relative_url }}" alt="Brakes on Rails" width="400">
+      <img src="{{ "/assets/images/brakes_design.png" | relative_url }}" alt="Brake CAD Assembly" width="300"><br>
+      <img src="{{ "/assets/images/Brakes_Cad_w_rail.png" | relative_url }}" alt="Brakes on Rails" width="300">
     </td>
   </tr>
 </table>
@@ -70,9 +70,8 @@ The brake system was initially developed through iterative CAD modeling and mech
 
 **Improvements:**
 - Easier C-Bracket to manufacture
-- New double-acting mountable actuator
+- New double-acting actuator that allows mountability
 - Springs attached to plates still allow retraction
-- Passed all preliminary Ansys tests
 
 # Finite Element Analysis (FEA)
 
@@ -103,14 +102,14 @@ Finite element analysis was conducted in ANSYS to evaluate stress distribution, 
   </tr>
   <tr>
     <td>
-      <img src="{{ "/assets/images/FOS_brakes.png" | relative_url }}" alt="ANSYS FOS Analysis" width="400"><br>
-      <img src="{{ "/assets/images/FOS_brakes_scale.png" | relative_url }}" alt="ANSYS FOS Scale" width="200">
+      <img src="{{ "/assets/images/FOS_brakes.png" | relative_url }}" alt="ANSYS FOS Analysis" width="300"><br>
+      <img src="{{ "/assets/images/FOS_brakes_scale.png" | relative_url }}" alt="ANSYS FOS Scale" width="150">
     </td>
     <td>
-      <img src="{{ "/assets/images/Ansys_image(new).jpg" | relative_url }}" alt="ANSYS Deformation Plot" width="400"><br>
+      <img src="{{ "/assets/images/Ansys_image(new).jpg" | relative_url }}" alt="ANSYS Deformation Plot" width="300"><br>
       <img src="{{ "/assets/images/ansys_mov.svg" | relative_url }}" 
      alt="ANSYS Deformation Animation" 
-     width="400" height="292">
+     width="300" height="292">
     </td>
   </tr>
 </table>
