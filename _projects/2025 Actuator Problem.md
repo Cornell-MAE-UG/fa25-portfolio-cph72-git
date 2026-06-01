@@ -57,7 +57,7 @@ The project was completed in two phases. In the first, the bar was treated as ri
 Using the 150 cm × 50 cm design window and the Pythagorean theorem, a bar length of 158 cm was selected to fit within the frame. A free body diagram was drawn with the RSX actuator force applied 0.75 m from the ground pin and the load at the bar tip. Taking moments about the ground pin and applying the RSX maximum force of 294 kN gives a maximum tip load of approximately **788 N (~80 kg)**.
 
 <div style="text-align: center; margin: 28px 0;">
-  <img src="{{ site.baseurl }}/assets/images/Hw5Design.jpeg" width="500"
+  <img src="{{ site.baseurl }}assets/images/image0 (1).jpeg" width="500"
        style="border: 1px solid #ccc; border-radius: 8px; padding: 8px;">
   <p style="margin-top: 8px; font-size: 0.9rem; color: #666;">Figure 1 — Rigid and flexible beam geometry used in the analysis</p>
 </div>
