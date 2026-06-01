@@ -1,10 +1,12 @@
 ---
 layout: project
-title: "Hyperloop Braking System Redesign"
+title: "Hyperloop Pneumatic Dual-Pad Braking System Redesign"
 description: A custom-designed pneumatic braking mechanism developed using CAD, FEA validation, and precision manufacturing.
 ---
 
-# Pneumatic Dual-Pad Brake System
+<style>
+  h1.project-title, .page-title, h1 { text-align: center; }
+</style>
 
 <img src="{{ "/assets/images/brakes_assembly.jpeg" | relative_url }}" alt="Final Brake Assembly" width="600">
 
@@ -15,6 +17,21 @@ description: A custom-designed pneumatic braking mechanism developed using CAD, 
 This project involved the design, analysis, and manufacturing of a compact pneumatic brake system intended to provide reliable clamping force, structural rigidity, and repeatable operation. The system was designed with an emphasis on manufacturability, efficient force transmission, and mechanical robustness.
 
 The project included the complete engineering workflow from initial concept generation and CAD modeling to finite element analysis (FEA), machining, assembly, and testing.
+
+---
+
+# Skills & Tools
+
+- SolidWorks
+- Excel
+- ANSYS Mechanical
+- Manufacturing Drawings
+- Mechanical Design
+- FEA through Ansys
+- Pneumatic Systems
+- Lathe and Mill Machining
+- Off-The-Shelf Component Sourcing
+- Engineering Documentation
 
 ---
 
@@ -79,7 +96,7 @@ Finite element analysis was conducted in ANSYS to evaluate stress distribution, 
 </style>
 
 <div style="display: flex; justify-content: center;">
-<table class="design-table">
+<table class="fea-table">
   <tr>
     <th>FOS Analysis</th>
     <th>Deformation Analysis</th>
@@ -119,15 +136,11 @@ Following the design validation process, the brake system components were manufa
 ## PUT DRAWINGS PHOTOS HERE
 <img src="{{ "/assets/images/no_pads_assembly.jpg" | relative_url }}" alt="Partial Assembly" width="600">
 
-Discussion of:
-- Materials used
-- Machining operations
-- Manufacturing tolerances
-- Challenges encountered during fabrication
+The components were machined from aluminum stock using manual mills and manual lathes. Operations included milling, turning, drilling, and tapping, with additional finishing operations such as chamfering and countersinking. Raw stock was cut to size using a bandsaw prior to machining. All components were machined to a tolerance of ±0.05 in, with over 20 shop hours invested in fabrication.
 
 ---
 
-## Final Assembly
+## Final Assembly Movement Demonstration
 
 <style>
   .video-modal-overlay {
@@ -182,7 +195,7 @@ Discussion of:
   .video-watch-link:hover { background: #444; }
 </style>
 
-<a class="video-watch-link" href="#" onclick="document.getElementById('videoModal').classList.add('active'); return false;">▶ Watch Brake Movement Demo</a>
+<a class="video-watch-link" href="#" onclick="document.getElementById('videoModal').classList.add('active'); return false;">▶ Watch</a>
 
 <div id="videoModal" class="video-modal-overlay" onclick="if(event.target===this){closeVideo();}">
   <div class="video-modal-box">
@@ -204,32 +217,20 @@ Description of the completed assembly and overall system integration.
 
 ---
 
-# Results & Performance
-
-The completed brake system successfully demonstrated reliable pneumatic actuation and repeatable braking behavior. Structural performance aligned with FEA expectations, and the final assembly maintained rigidity during operation.
-
-Potential future improvements include:
-- Weight optimization
-- Improved pad alignment
-- Increased manufacturing precision
-- Enhanced mounting geometry
-
----
 ## Next Steps
 
+With the mechanical brake assembly complete, focus has shifted to the pneumatic subsystem. 
+This has involved mapping out all required pneumatic components, evaluating off-the-shelf component 
+sourcing to maximize braking force within system constraints, and developing a working understanding 
+of pneumatic circuit behavior. A housing carriage is also being designed to package all 
+components within the pod's volume constraints.
 
----
-# Skills & Tools
-
-- SolidWorks
-- ANSYS Mechanical
-- Mechanical Design
-- Finite Element Analysis (FEA)
-- Pneumatic Systems
-- CNC Machining
-- Manual Machining
-- Assembly & Testing
-- Engineering Documentation
+Remaining steps include:
+- Refine off-the-shelf pneumatic component sourcing to maximize braking capacity
+- Assemble and integrate the pneumatic circuit
+- Test pneumatic actuation and verify braking performance
+- Design and finalize mounting for both the brake assembly and pneumatic carriage
+- Detail drawings for all machined components
 
 ---
 
