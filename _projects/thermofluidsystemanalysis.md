@@ -5,44 +5,83 @@ description: Counter flow vs. Parallel flow Heat Exchangers
 image: /assets/images/heat-exchanger-collage.jpg
 ---
 
-Team Members: Connor Hyde and Andrew Peene
-A heat exchanger is a device that transfers thermal energy between two fluids while keeping them physically separate. One fluid is hotter and releases heat, and the other is cooler and absorbs that heat. They move through different channels, such as tubes or plates, divided by a solid wall that conducts heat but prevents mixing. As they pass through the exchanger, the temperature difference between the fluids drives heat from the hotter stream to the colder one.
-The way the fluids flow determines how the exchanger performs. In parallel flow, both fluids enter from the same side and travel in the same direction, so the temperature difference is highest at the start and drops off quickly. In counter-flow, the fluids travel in opposite directions, which keeps the temperature difference more consistent and improves overall heat transfer.
-In general, a heat exchanger’s role is to transfer thermal energy efficiently for heating, cooling, or energy recovery in applications like power plants, refrigeration systems, car radiators, and a wide range of industrial processes.
+<style>
+  .thermo-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 6px;
+    margin: 16px 0 28px 0;
+  }
+  .thermo-table td, .thermo-table th {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px 14px;
+    text-align: center;
+  }
+  .thermo-table th {
+    background-color: #f0f0f0;
+    font-weight: 700;
+  }
+  .section-divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 36px 0;
+  }
+</style>
 
-<img src="{{ "/assets/images/heat-exchanger-collage.jpg" | relative_url }}" alt="Heat_Exchanger_Setup" width="600">
+<div style="text-align: center; margin-bottom: 8px;">
+  <em>Connor Hyde &amp; Andrew Peene</em>
+</div>
 
+<div style="text-align: center; margin: 24px 0;">
+  <img src="{{ "/assets/images/heat-exchanger-collage.jpg" | relative_url }}" 
+       alt="Heat Exchanger Setup" 
+       width="600" 
+       style="border: 1px solid #ccc; border-radius: 8px; padding: 8px;">
+</div>
 
-## Data
+<hr class="section-divider">
+
+# Overview
+
+A heat exchanger transfers thermal energy between two fluids while keeping them physically separate. One fluid releases heat and the other absorbs it as they pass through separate channels divided by a conductive wall. The temperature difference between the streams drives heat transfer from the hotter fluid to the cooler one.
+
+The flow configuration determines how effectively this transfer occurs. In **parallel flow**, both fluids enter from the same side and travel in the same direction — the temperature difference is highest at the inlet and drops off quickly. In **counter-flow**, the fluids travel in opposite directions, maintaining a more consistent temperature difference throughout and enabling more complete heat transfer.
+
+Heat exchangers are used across a wide range of applications including power plants, refrigeration systems, car radiators, and industrial processes.
+
+<hr class="section-divider">
+
+# Experimental Data
 
 ### Counter Flow
 
-| Run | State   | TC (°C) | TH (°C) | THE (°C) |
-|-----|---------|---------|---------|----------|
-| 1   | Initial | 2.1     | 28.0    | 22.0     |
-| 1   | Final   | 11.3    | 10.0    | 23.1     |
-| 2   | Initial | 7.0     | 21.0    | 21.5     |
-| 2   | Final   | 13.2    | 11.5    | 19.0     |
-
+<table class="thermo-table">
+  <tr>
+    <th>Run</th><th>State</th><th>T<sub>C</sub> (°C)</th><th>T<sub>H</sub> (°C)</th><th>T<sub>HE</sub> (°C)</th>
+  </tr>
+  <tr><td>1</td><td>Initial</td><td>2.1</td><td>28.0</td><td>22.0</td></tr>
+  <tr><td>1</td><td>Final</td><td>11.3</td><td>10.0</td><td>23.1</td></tr>
+  <tr><td>2</td><td>Initial</td><td>7.0</td><td>21.0</td><td>21.5</td></tr>
+  <tr><td>2</td><td>Final</td><td>13.2</td><td>11.5</td><td>19.0</td></tr>
+</table>
 
 ### Parallel Flow
 
-| Run | State   | TC (°C) | TH (°C) | THE (°C) |
-|-----|---------|---------|---------|----------|
-| 1   | Initial | 7.3     | 23.0    | 23.0     |
-| 1   | Final   | 12.0    | 13.9    | 20.0     |
-| 2   | Initial | 8.5     | 21.1    | 22.5     |
-| 2   | Final   | 12.2    | 13.6    | 20.1     |
+<table class="thermo-table">
+  <tr>
+    <th>Run</th><th>State</th><th>T<sub>C</sub> (°C)</th><th>T<sub>H</sub> (°C)</th><th>T<sub>HE</sub> (°C)</th>
+  </tr>
+  <tr><td>1</td><td>Initial</td><td>7.3</td><td>23.0</td><td>23.0</td></tr>
+  <tr><td>1</td><td>Final</td><td>12.0</td><td>13.9</td><td>20.0</td></tr>
+  <tr><td>2</td><td>Initial</td><td>8.5</td><td>21.1</td><td>22.5</td></tr>
+  <tr><td>2</td><td>Final</td><td>12.2</td><td>13.6</td><td>20.1</td></tr>
+</table>
 
+<hr class="section-divider">
 
-Analysis:
-In the counter-flow setup, the cold fluid warmed up significantly in both trials, and the hot fluid cooled by a large amount, indicating strong heat transfer. Interestingly, the cold outlet temperature rose above the hot outlet temperature, which at first seemed to violate the second law of thermodynamics. After looking into it further, I learned that this can occur only in counter-flow exchangers. Because the two fluids move in opposite directions, the cold stream continually encounters hotter fluid upstream, allowing it to reach temperatures close to the hot inlet. This also explains why the effectiveness values were higher than those of the parallel-flow runs, reaching about 35 to 45 percent compared with 29 percent.
-In the parallel-flow configuration, both fluids showed smaller temperature changes than in the counter-flow tests. The hot outlet temperature always stayed above the cold outlet temperature, and the temperature difference between the two streams dropped quickly along the exchanger. This leads to weaker heat transfer. Parallel flow has an inherent limitation: the fluids begin with their maximum temperature difference, but because they travel in the same direction, their temperatures converge quickly. As soon as this happens, the driving force for heat transfer falls off, resulting in lower effectiveness and more modest temperature changes.
-Overall, counter-flow consistently produced larger temperature shifts and higher cold outlet temperatures, while parallel flow produced smaller changes and no temperature crossing. These outcomes match the expected thermal behavior of each configuration. Counter-flow preserves a strong temperature difference throughout the exchanger, enabling more complete heat transfer, whereas parallel flow loses its gradient early on, restricting performance. Both setups behaved exactly as theory predicts, clearly demonstrating the contrast between the two designs.
+# Analysis
 
+**Counter-flow** produced strong heat transfer in both trials. The cold fluid warmed significantly while the hot fluid cooled by a large margin. Notably, the cold outlet temperature rose above the hot outlet temperature — something that initially appears to violate the second law of thermodynamics. This phenomenon is actually unique to counter-flow exchangers: because the two fluids move in opposite directions, the cold stream continuously encounters hotter fluid upstream, allowing it to approach temperatures near the hot inlet. This sustained temperature gradient resulted in effectiveness values of roughly 35–45%, noticeably higher than the parallel-flow results.
 
-
-
-
-
-
+**Parallel-flow** produced smaller temperature changes in both fluids across all runs. The hot outlet temperature always remained above the cold outlet, and no temperature crossing occurred. This is an inherent limitation of parallel flow — both fluids start with the largest possible temperature difference at the inlet, but as they travel in the same direction their
