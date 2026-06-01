@@ -183,7 +183,7 @@ Discussion of:
   <div class="video-modal-box">
     <button class="video-modal-close" onclick="closeVideo()">✕</button>
     <video id="modalVideo" controls muted width="100%">
-      <source src="{{ "assets/video/movement_vid.mp4" | relative_url }}" type="video/mp4">
+      <source src="{{ "assets/video/movement_vid(new).mp4" | relative_url }}" type="video/mp4">
     </video>
   </div>
 </div>
