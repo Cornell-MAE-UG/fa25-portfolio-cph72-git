@@ -101,7 +101,7 @@ footer {
   vertical-align: top;
 }
 
-.project-image {
+-image {
   float: left;
   margin: 20px 25px 25px 0;
   max-width: 200px;
@@ -143,8 +143,10 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 20px;
   padding: 20px;
+  padding-bottom: 60px;
   margin: 0 auto;
   max-width: 100%;
+}
 }
 
 .gallery-item {
