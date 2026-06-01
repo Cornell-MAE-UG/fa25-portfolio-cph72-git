@@ -146,15 +146,15 @@ footer {
   padding-bottom: 60px;
   margin: 0 auto;
   max-width: 100%;
-}
+  justify-items: center;
+  justify-content: center;
 }
 
 .gallery-item {
-  overflow: hidden;
+  overflow: visible;
   text-align: center;
   transition: transform 0.3s ease;
   max-width: 250px; 
-  max-height: 300px; 
 }
 
 .gallery-item img {
