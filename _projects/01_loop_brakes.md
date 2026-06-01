@@ -9,7 +9,9 @@ image: /assets/images/brakes_assembly.jpeg
   h1.project-title, .page-title, h1 { text-align: center; }
 </style>
 
-<img src="{{ "/assets/images/brakes_assembly.jpeg" | relative_url }}" alt="Final Brake Assembly" width="600">
+<div style="text-align: center;">
+  <img src="{{ "/assets/images/brakes_assembly.jpeg" | relative_url }}" alt="Final Brake Assembly" width="600">
+</div>
 
 ---
 
