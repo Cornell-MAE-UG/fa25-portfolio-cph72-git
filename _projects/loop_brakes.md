@@ -49,6 +49,7 @@ The brake system was initially developed through iterative CAD modeling and mech
     </td>
   </tr>
 </table>
+</div>
 
 **Improvements:**
 - Easier C-Bracket to manufacture
@@ -96,6 +97,7 @@ Finite element analysis was conducted in ANSYS to evaluate stress distribution, 
     </td>
   </tr>
 </table>
+</div>
 
 **Loads:**
 - Braking force (150N calculated to stop pod in 5 seconds)
