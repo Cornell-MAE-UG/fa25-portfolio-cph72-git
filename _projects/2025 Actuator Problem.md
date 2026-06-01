@@ -5,122 +5,118 @@ description: Design for lifting a weight the highest height
 image: /assets/images/TOL-8674-RSX080-RSX096-no-background-600x541.png
 ---
 
-## Objective
+<style>
+  .section-divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 36px 0;
+  }
+  .eq-box {
+    background: #f7f7f7;
+    border-left: 3px solid #aaa;
+    border-radius: 4px;
+    padding: 12px 20px;
+    margin: 16px 0;
+    font-family: monospace;
+    font-size: 1rem;
+  }
+  .param-list {
+    margin: 8px 0 16px 20px;
+    line-height: 2;
+  }
+</style>
 
-This project involved designing a planar lifting mechanism within a fixed 150 cm by 50 cm design space using a rigid bar, three pin supports with two mounted on the ground, and a linear actuator selected from an online industrial catalog using only its maximum force rating. The objective was to lift the maximum possible weight to the greatest achievable height while satisfying all geometric and support constraints. In the first phase, the bar was treated as a rigid body and a full static analysis was performed to determine the optimal mechanism geometry, actuator placement, and resulting lifting capacity. In the second phase, the bar was reanalyzed as a flexible beam subject to transverse loading from both the applied weight and actuator force. Maximum beam deflection was computed under clearly stated assumptions, and a beam cross-section and material were selected to limit vertical deflection.
+# Overview
 
----
+This project involved designing a planar lifting mechanism within a fixed 150 cm × 50 cm design space using a rigid bar, three pin supports, and a linear actuator selected from an industrial catalog. The objective was to lift the maximum possible weight to the greatest achievable height while satisfying all geometric and support constraints.
 
-### Step 1: Rigid Bar Analysis  
-### a) Problem Definition, Constraints/Objectives, Degrees of Freedom
+The project was completed in two phases. In the first, the bar was treated as rigid and a full static analysis determined the optimal geometry, actuator placement, and lifting capacity. In the second, the bar was reanalyzed as a flexible beam under transverse loading, and a cross-section and material were selected to limit deflection.
 
-**Problem Definition:**  
-Design a planar lifting mechanism that uses a linear actuator to lift a load within a 150 cm by 50 cm design space. The mechanism includes a bar that is initially assumed to be rigid.
+<hr class="section-divider">
 
-**Constraints:**  
-- Overall design space limited to 150 cm (length) by 50 cm (height)  
-- Exactly three pin supports, with two mounted on the ground  
-- One linear actuator selected from the catalog using its maximum force  
-- Bar and supports assumed rigid for static analysis  
+# Phase 1 — Rigid Bar Analysis
 
-**Objectives:**  
-- Maximize the lifted weight  
-- Maximize the vertical lifting height  
-- Keep the mechanism simple and lightweight  
+## Problem Definition
 
-**Degrees of Freedom (DOF):**  
-The mechanism has **one degree of freedom**, defined by the motion of the rigid bar driven by the actuator.
+**Design space:** 150 cm × 50 cm
 
-### b) Static Analysis of the Rigid Bar
+**Constraints:**
+- Exactly three pin supports, two mounted on the ground
+- One linear actuator selected from catalog by maximum force rating
+- Bar and supports assumed rigid for static analysis
 
-Treating the bar as rigid, I performed a simple static analysis:
+**Objectives:**
+- Maximize the lifted weight
+- Maximize the vertical lifting height
+- Keep the mechanism simple and lightweight
 
-- Used the 150 cm by 50 cm design window and the Pythagorean theorem to choose a bar length of 158 cm that fits inside the frame.  
-- Drew a free body diagram with the RSX actuator force at 0.75 m from the ground pin and the load at the bar tip.  
-- Took moments about the ground pin to relate the actuator force to the lifted load.  
-- Applied the RSX maximum force of 294 kN to solve for the maximum allowable load at the tip, which is approximately 788 N (about 80 kg).
+**Degrees of Freedom:** The mechanism has one degree of freedom, defined by the rotation of the rigid bar driven by the actuator.
 
-This analysis produced the final rigid bar configuration and maximum load used for the later beam deflection study.
+## Static Analysis
 
-### Final Beam Design (Flexible)
+Using the 150 cm × 50 cm design window and the Pythagorean theorem, a bar length of 158 cm was selected to fit within the frame. A free body diagram was drawn with the RSX actuator force applied 0.75 m from the ground pin and the load at the bar tip. Taking moments about the ground pin and applying the RSX maximum force of 294 kN gives a maximum tip load of approximately **788 N (~80 kg)**.
 
-Rigid and flexible beam geometry used in the analysis:
+<div style="text-align: center; margin: 28px 0;">
+  <img src="{{ site.baseurl }}/assets/images/Hw5Design.jpeg" width="500"
+       style="border: 1px solid #ccc; border-radius: 8px; padding: 8px;">
+  <p style="margin-top: 8px; font-size: 0.9rem; color: #666;">Figure 1 — Rigid and flexible beam geometry used in the analysis</p>
+</div>
 
-<p align="center">
-  <img src="{{ site.baseurl }}/assets/images/Hw5Design.jpeg" width="500">
-</p>
+<hr class="section-divider">
 
----
+# Phase 2 — Flexible Beam Analysis
 
-### Step 2: Beam (Flexible Bar) Analysis  
-### a) Maximum Beam Deflection
+## 2a. Maximum Beam Deflection
 
-Once flexibility is considered, the rigid bar becomes a beam subjected to two transverse forces:
-
-1. The weight of the lifted load  
-2. The transverse component of the actuator force  
+When flexibility is introduced, the bar becomes a beam subjected to two transverse forces: the weight of the lifted load and the transverse component of the actuator force.
 
 **Assumptions:**
+- Prismatic, linearly elastic beam
+- Small-deflection Euler–Bernoulli beam theory
+- Only transverse forces considered
+- Bar behaves as a simply supported beam between the ground pin and actuator connection
 
-- Beam is prismatic and linearly elastic  
-- Small deflection Euler–Bernoulli beam theory applies  
-- Only transverse forces are considered  
-- The bar behaves as a **simply supported beam** between the ground pin at A and the actuator connection  
+For a simply supported beam with a transverse point load P, maximum deflection takes the standard form:
 
-For a simply supported beam with a transverse point load P located between the supports, the maximum deflection can be written in the standard form
+<div class="eq-box">
+  δ_max = (P · a² · b²) / (3 · E · I · L)
+</div>
 
-δ_max = (P · a² · b²) / (3 · E · I · L)
+<div class="param-list">
+  <strong>L</strong> — distance between supports<br>
+  <strong>a</strong> — distance from left support to load<br>
+  <strong>b</strong> — distance from right support to load (b = L − a)
+</div>
 
-where:  
+Applying superposition for both transverse forces with the mechanism geometry (L = 1.58 m, a = 0.75 m):
 
-- L is the distance between the two supports  
-- a is the distance from the left support to the load  
-- b is the distance from the right support to the load (b = L − a)  
+<div class="eq-box">
+  δ_max = (1 / (E · I)) · (1.315 · W⊥ + 0.374 · F⊥)
+</div>
 
-In my mechanism, the two transverse forces are:
+## 2b. Beam Design to Limit Deflection
 
-- W⊥ from the lifted weight  
-- F⊥ from the actuator  
+**Requirement:** δ_max < 0.02 · L
 
-I treated these as equivalent transverse point loads acting between the supports and used superposition to obtain a combined expression for the maximum deflection. With my geometry (L = 1.58 m, a = 0.75 m) this leads to
+Rearranging the deflection expression gives a minimum required moment of inertia:
 
-δ_max = (1 / (E · I)) · (1.315 · W⊥ + 0.374 · F⊥)
+<div class="eq-box">
+  I_req > (1.315 · W⊥ + 0.374 · F⊥) / (0.02 · L · E)
+</div>
 
-This expression gives the maximum vertical deflection of the pinned beam as a function of the applied transverse loads, the beam stiffness, and the chosen cross section.
+**Selected Section: W150×13.5**
 
-### Step 2b – Beam Design to Limit Deflection Below 2% of Length
+- Material: Structural steel, E = 200 GPa
+- Strong-axis moment of inertia: I_x = 6.83 × 10⁻⁶ m⁴
+- Cross-sectional area: A = 1,730 mm²
+- Mass per meter: 13.5 kg/m
 
-**Requirement**
+The required inertia from the loading conditions falls below I_x, confirming the W150×13.5 keeps deflection within the 2% limit (δ_max < 31.6 mm for L = 1.58 m). Among the W150 family, this section also has the smallest area and lowest mass per meter, making it the most mass-efficient choice that still satisfies the deflection requirement.
 
-The vertical deflection of the flexible bar must satisfy
+## 2c. Final Beam Design
 
-δ_max < 0.02 · L
-
-Using the deflection expression from Step 2a,
-
-δ_max = (1 / (E · I)) · (1.315 · W⊥ + 0.374 · F⊥)
-
-the requirement can be written as a minimum required moment of inertia:
-
-I_req > (1.315 · W⊥ + 0.374 · F⊥) / (0.02 · L · E)
-
-**Chosen Beam**
-
-To satisfy this, I selected a rolled wide-flange steel section **W150x13.5** with
-
-- Material: structural steel, E = 200 GPa  
-- Strong-axis moment of inertia:  
-  Ix = 6.83 × 10⁻⁶ m⁴  
-
-From the inequality above, my design load combination (W⊥ and F⊥ from Step 2a) gives a required inertia that is **less than** Ix, so the W150x13.5 beam keeps
-
-δ_max < 0.02 · L  (δ_max < 0.0316 m for L = 1.58 m).
-
-The W150x13.5 shape also has the smallest cross-sectional area (A = 1,730 mm²) and lowest mass per meter in the W150 family (13.5 kg/m). Therefore, among the steel W-sections I considered, it is a **very mass-efficient beam** that still meets the 2% deflection limit.
-
-### Step 2c – Final Beam Choice
-
-<p align="center">
-  <img src="{{ site.baseurl }}/assets/images/Hw12Design.jpeg" width="500">
-</p>
----
+<div style="text-align: center; margin: 28px 0;">
+  <img src="{{ site.baseurl }}/assets/images/Hw12Design.jpeg" width="500"
+       style="border: 1px solid #ccc; border-radius: 8px; padding: 8px;">
+  <p style="margin-top: 8px; font-size: 0.9rem; color: #666;">Figure 2 — Final flexible beam design</p>
+</div>
