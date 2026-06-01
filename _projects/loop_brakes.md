@@ -32,6 +32,7 @@ The project included the complete engineering workflow from initial concept gene
 
 The brake system was initially developed through iterative CAD modeling and mechanism evaluation. Special attention was given to actuator placement, pad alignment, spring return behavior, and assembly simplicity.
 
+<div style="display: flex; justify-content: center;">
 <table class="design-table">
   <tr>
     <th>Initial CAD Concepts</th>
@@ -76,7 +77,8 @@ Finite element analysis was conducted in ANSYS to evaluate stress distribution, 
   }
 </style>
 
-<table class="fea-table">
+<div style="display: flex; justify-content: center;">
+<table class="design-table">
   <tr>
     <th>FOS Analysis</th>
     <th>Deformation Analysis</th>
