@@ -120,9 +120,9 @@ The project included the complete engineering workflow from initial concept gene
 # Skills & Tools
 
 - SolidWorks
-- Excel
 - ANSYS Mechanical
 - Manufacturing Drawings
+- Microsoft Excel
 - Mechanical Design
 - FEA through Ansys
 - Pneumatic Systems
