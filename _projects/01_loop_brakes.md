@@ -311,7 +311,7 @@ The components were machined from aluminum stock using manual mills and manual l
   }
 </script>
 
-Description of the completed assembly and overall system integration.
+This video demonstrates the retraction acheieved from the exterior springs, which makes our double acting actuation function as single acting, and addiitonally shows the range of vertical motion from the linear guide rails. The combination of the C-bracket and rails is how dual-clamping is acheived.
 
 ---
 
