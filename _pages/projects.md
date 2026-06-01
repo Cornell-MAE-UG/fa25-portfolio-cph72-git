@@ -4,6 +4,10 @@ title: Connor Hyde - Portfolio
 permalink: /projects/
 ---
 
+<style>
+  .container { max-width: 900px; }
+</style>
+
 <div class="gallery-container">
 <div class="project-gallery">
     {% for project in site.projects %}
