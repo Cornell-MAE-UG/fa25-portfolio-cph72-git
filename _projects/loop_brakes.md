@@ -19,6 +19,13 @@ This project involved the design, analysis, and manufacturing of a compact pneum
 The project included the complete engineering workflow from initial concept generation and CAD modeling to finite element analysis (FEA), machining, assembly, and testing.
 
 ---
+## Project Gallery
+
+| CAD Model | FEA | Final Assembly |
+|---|---|---|
+| <img src="{{ "/assets/images/brakes_design.png" | relative_url }}" alt="CAD Model" width="200"> | <img src="{{ "/assets/images/Ansys_image(new).jpg" | relative_url }}" alt="FEA" width="200"> | <img src="{{ "/assets/images/brakes_assembly.jpeg" | relative_url }}" alt="Final Assembly" width="200"> |
+
+---
 
 # Skills & Tools
 
@@ -219,7 +226,7 @@ Description of the completed assembly and overall system integration.
 
 ---
 
-## Next Steps
+# Next Steps
 
 With the mechanical brake assembly complete, focus has shifted to the pneumatic subsystem. 
 This has involved mapping out all required pneumatic components, evaluating off-the-shelf component 
@@ -234,21 +241,5 @@ Remaining steps include:
 - Design and finalize mounting for both the brake assembly and pneumatic carriage
 - Detail drawings for all machined components
 
----
 
-# Additional Media
 
-## Project Gallery
-
-| CAD Model | FEA | Final Assembly |
-|---|---|---|
-| <img src="{{ "/assets/images/brakes_design.png" | relative_url }}" alt="CAD Model" width="200"> | <img src="{{ "/assets/images/Ansys_image.jpg" | relative_url }}" alt="FEA" width="200"> | <img src="{{ "/assets/images/brakes_assembly.jpeg" | relative_url }}" alt="Final Assembly" width="200"> |
-
----
-
-# Author
-
-Connor Hyde  
-Mechanical Engineering Student at Cornell University
-
-[LinkedIn](https://www.linkedin.com/in/connorphyde/)
