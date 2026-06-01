@@ -73,6 +73,8 @@ The brake system was initially developed through iterative CAD modeling and mech
 - New double-acting actuator that allows mountability
 - Springs attached to plates still allow retraction
 
+---
+
 # Finite Element Analysis (FEA)
 
 Finite element analysis was conducted in ANSYS to evaluate stress distribution, deformation, and structural integrity under expected loading conditions.
@@ -131,16 +133,14 @@ The FEA results confirmed the structural integrity of the brake system under exp
 
 Following the design validation process, the brake system components were manufactured and assembled using a combination of machining and standard fastening methods.
 
-## Machined Components
 
-## PUT DRAWINGS PHOTOS HERE
-<img src="{{ "/assets/images/no_pads_assembly.jpg" | relative_url }}" alt="Partial Assembly" width="600">
+<img src="{{ "/assets/images/no_pads_assembly.jpg" | relative_url }}" alt="Partial Assembly" width="450">
 
 The components were machined from aluminum stock using manual mills and manual lathes. Operations included milling, turning, drilling, and tapping, with additional finishing operations such as chamfering and countersinking. Raw stock was cut to size using a bandsaw prior to machining. All components were machined to a tolerance of ±0.05 in, with over 20 shop hours invested in fabrication.
 
 ---
 
-## Final Assembly Movement Demonstration
+# Final Assembly Movement Demonstration
 
 <style>
   .video-modal-overlay {
@@ -183,11 +183,11 @@ The components were machined from aluminum stock using manual mills and manual l
   .video-watch-link {
     display: inline-block;
     margin-top: 8px;
-    padding: 12px 24px;
+    padding: 18px 48px;
     background: #2c2c2c;
     color: #fff !important;
     border-radius: 6px;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: bold;
     text-decoration: none;
     border: 2px solid #555;
@@ -195,7 +195,9 @@ The components were machined from aluminum stock using manual mills and manual l
   .video-watch-link:hover { background: #444; }
 </style>
 
-<a class="video-watch-link" href="#" onclick="document.getElementById('videoModal').classList.add('active'); return false;">▶ Watch</a>
+<div style="text-align: center;">
+  <a class="video-watch-link" href="#" onclick="document.getElementById('videoModal').classList.add('active'); return false;">▶ Watch</a>
+</div>
 
 <div id="videoModal" class="video-modal-overlay" onclick="if(event.target===this){closeVideo();}">
   <div class="video-modal-box">
