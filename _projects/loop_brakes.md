@@ -88,7 +88,9 @@ Finite element analysis was conducted in ANSYS to evaluate stress distribution, 
     </td>
     <td>
       <img src="{{ "/assets/images/Ansys_image(new).jpg" | relative_url }}" alt="ANSYS Deformation Plot" width="400"><br>
-      <img src="{{ "/assets/images/ansys_mov.svg" | relative_url }}" alt="ANSYS Deformation Animation" width="400">
+      <img src="{{ "/assets/images/ansys_mov.svg" | relative_url }}" 
+     alt="ANSYS Deformation Animation" 
+     width="400" height="292">
     </td>
   </tr>
 </table>
