@@ -192,7 +192,6 @@ Finite element analysis was conducted in ANSYS to evaluate stress distribution, 
     text-align: center;
   }
 </style>
-
 <div style="display: flex; justify-content: center;">
 <table class="fea-table">
   <tr>
@@ -201,14 +200,12 @@ Finite element analysis was conducted in ANSYS to evaluate stress distribution, 
   </tr>
   <tr>
     <td>
-      <img src="{{ "/assets/images/FOS_brakes.png" | relative_url }}" alt="ANSYS FOS Analysis" width="300" style="display: block; margin-bottom: 16px;"><br>
-      <img src="{{ "/assets/images/FOS_brakes_scale.png" | relative_url }}" alt="ANSYS FOS Scale" width="150">
+      <img src="{{ "/assets/images/FOS_brakes.png" | relative_url }}" alt="ANSYS FOS Analysis" width="300" style="display: block; margin: 0 auto 16px auto;"><br>
+      <img src="{{ "/assets/images/FOS_brakes_scale.png" | relative_url }}" alt="ANSYS FOS Scale" width="150" style="display: block; margin: 0 auto;">
     </td>
     <td>
-      <img src="{{ "/assets/images/Ansys_image(new).jpg" | relative_url }}" alt="ANSYS Deformation Plot" width="300"><br>
-      <img src="{{ "/assets/images/ansys_mov.svg" | relative_url }}" 
-     alt="ANSYS Deformation Animation" 
-     width="300" height="292">
+      <img src="{{ "/assets/images/Ansys_image(new).jpg" | relative_url }}" alt="ANSYS Deformation Plot" width="300" style="display: block; margin: 0 auto 16px auto;"><br>
+      <img src="{{ "/assets/images/ansys_mov.svg" | relative_url }}" alt="ANSYS Deformation Animation" width="300" height="292" style="display: block; margin: 0 auto;">
     </td>
   </tr>
 </table>
