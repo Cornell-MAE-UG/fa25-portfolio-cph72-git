@@ -60,7 +60,7 @@ Direction B was carried forward. It takes more modeling effort, but it's the onl
 
 ## Modeling process
 
-The shell was built by first creating a simplified internal envelope using Fusion's joint constraints, to validate pose and proportions against the reference geometry. Once that was locked in, the envelope was offset 5mm and shelled to generate the working shell, then clearance cuts, camera openings, and ventilation slots were added on top.
+The shell was built by first creating a simplified internal envelope using Fusion's joint constraints, to validate pose and proportions against the reference geometry. Once that was locked in, the envelope was offset 5mm and shelled to generate the working shell, then clearance cuts, camera openings, and ventilation slots were added on top. Given the time constraints, sketches and features were not fully dimensionally/geometrically constrained throughout the model, so the design isn't yet robust to edits the way a fully parametric model would be. With more time I'd go back through and fully constrain every sketch, so the model could be confidently resized or modified later without features breaking or shifting unexpectedly.
 
 <div style="display: flex; justify-content: center;">
 <table class="design-table">
@@ -96,7 +96,7 @@ In this pass, all cameras are externally mounted to the outer shell rather than 
 
 CAN FD wiring and power route through the shell's hollow interior, which was sized with enough clearance that all internal components can pass through during assembly, rather than needing the shell built around an already-assembled arm. Panel access is intended to use a mix of snap-fit and magnetic clasps at the seams, allowing tool-less opening for service, though this was defined as design intent rather than modeled in detail given the time available.
 
-Heat dissipation relies on two strategies working together: ventilation slots cut directly into the shell over each actuator zone for convective cooling, and a consistent air gap, built into the 5mm offset, that keeps the shell wall from touching the actuator housings directly. This matters because actuators can reach roughly 40-70°C under sustained load, while PETG's glass transition point is around 80°C, a fairly tight margin that the venting and air gap are meant to protect.
+Heat dissipation relies on two strategies working together: ventilation slots cut directly into the shell over each actuator zone for convective cooling, and a consistent air gap, built into the 5mm offset, that keeps the shell wall from touching the actuator housings directly. This matters because actuators can reach roughly 40-70°C under sustained load, while PETG's glass transition point is around 80°C, a fairly tight margin that the venting and air gap are meant to protect. The vent slots themselves were placed and sized quickly in this pass to demonstrate the concept rather than through any thermal calculation, with more time I'd revisit their size, count, and placement based on actual airflow and heat load estimates rather than visual judgment alone. I'd also address the fact that the slots are currently open enough to see straight through into the interior, which risks wires snagging or working their way out, or debris getting in. A finer mesh/hatch pattern over each vent, or simply shrinking the individual slot openings while keeping the same total airflow area, would solve this without giving up the cooling benefit.
 
 ---
 
@@ -132,4 +132,4 @@ Beyond that, with more time I would: design actual snap-fit or magnetic panel co
 
 - [docs.openarm.dev](https://docs.openarm.dev/) — reference specifications, hardware documentation, and reference imagery for the OpenArm 2.0 platform.
 - Fusion 360 — used to model the internal envelope, generate the shell via offset and shell operations, and produce the renders shown throughout this write-up.
-- Claude (Anthropic) — used for general assistance throughout this project, including researching robotics and manufacturing concepts, explaining CAD techniques and troubleshooting modeling issues, and help drafting and organizing this write-up.
+- Claude (Anthropic) — used for general assistance throughout this project, including research and explanations, help organizing this write-up, and formatting it for GitHub.
