@@ -49,14 +49,14 @@ Two directions were explored for the exterior. Direction A is fast, primitive-ba
   <p style="font-style: italic; margin-top: 8px;">Primitive-based envelope used to validate overall proportions and joint layout before committing to a refined shell.</p>
 </div>
 
-Direction B builds on that same envelope but adds smooth filleted transitions between segments, tapered proportions from shoulder to wrist, ventilation slots over the actuator zones, and integrated camera housings at the chest and wrist. It reads as one unified product rather than a stack of separate parts.
+Direction B is a separately developed, more detailed CAD model of the same overall arm. It adds smooth filleted transitions between segments, tapered proportions from shoulder to wrist, ventilation slots over the actuator zones, and integrated camera housings at the chest and wrist. It reads as one unified product rather than a stack of separate parts.
 
 <div style="text-align: center;">
   <img src="{{ "/assets/images/shell.png" | relative_url }}" alt="Direction B: refined, form-fitting shell" width="450" style="border: 1px solid #ccc; border-radius: 8px; padding: 12px;">
   <p style="font-style: italic; margin-top: 8px;">Final shell direction, with filleted transitions, ventilation slots over the actuator zones, and integrated camera housings at the chest and wrist.</p>
 </div>
 
-Direction B was carried forward. It takes more modeling effort, but it's the only one that actually satisfies the brief, service splits, heat venting, and camera integration are all real requirements Direction A doesn't address. Direction A's value was mainly as a fast sanity check on proportions and joint layout before investing time in the refined surface.
+Direction B was carried forward. It takes more modeling effort, but it's the only one that actually satisfies the brief, service splits, heat venting, and camera integration are all real requirements Direction A doesn't address. Direction A's value was mainly as a fast, separate sanity check on overall proportions and joint layout, run in parallel with the more detailed modeling that produced Direction B.
 
 ---
 
@@ -127,15 +127,15 @@ This task wasn't attempted, time went to the design concept, CAD model, camera i
 
 # 5. Manufacturability & materials
 
-The shell is designed for 3D-printed PETG construction. Sheet metal doesn't suit the shell's curved, multi-segment geometry, and injection molding's tooling cost only makes sense at production volumes well beyond this platform's scale, so PETG is the practical fit, it prints reliably without needing an enclosed chamber, which matters in a small-shop context.
+The shell is 3D-printed PETG. Sheet metal didn't seem like a good fit for the curved, multi-segment shape, and injection molding's tooling cost only makes sense at much higher production volumes, so PETG felt like the practical choice for a small shop.
 
-The one exception is the base pillar cover, a simple flat-sided, lofted shape with no curves or cutouts to accommodate. That geometry suits bent sheet metal better, it's more durable where the base takes repeated handling, and it can be made from a single flat pattern with a few straight bends.
+The one exception is the base pillar cover. It's a simple flat-sided shape with no curves or cutouts, so bent sheet metal seemed like a better, more durable fit there, and it could be made from a single flat pattern with a few bends.
 
-Wall thickness is 2.5mm for the PETG shell, thick enough to resist warping under repeated servicing while keeping print time and cost reasonable. The sheet metal base cover would use a thinner 1-1.5mm aluminum gauge, since it's a non-structural cosmetic piece. Draft allowance doesn't apply since nothing here is molded or cast, but bend allowance does apply to the sheet metal cover's fold lines.
+Wall thickness is 2.5mm for the PETG shell, enough to resist warping while keeping print time reasonable. The sheet metal cover would use a thinner gauge, maybe 1-1.5mm, since it's not load-bearing.
 
-Assembly mixes fasteners and snap-fits by function rather than uniformly. Snap-fits sit at the seams between shell panels for quick, tool-less access to wiring and camera connections, while fasteners hold each panel rigidly to the frame underneath. The base cover uses fasteners only, since it's rarely opened. If a smoother finish than what comes off the printer is wanted, the panels can be wet-sanded afterward, a low-cost step that needs no extra equipment.
+Assembly mixes fasteners and snap-fits: snap-fits at panel seams for quick access to wiring and cameras, fasteners holding panels to the frame structurally. If a smoother finish is wanted, the panels could be wet-sanded afterward.
 
-A few things would need to go to an outside vendor: threaded inserts for the PETG panels, since printed plastic threads wear out fast under repeated fastening, the actual bending of the sheet metal cover, since most small shops don't have a brake press on hand, and custom-machined adapter brackets if the real frame's mounting holes don't line up with the boss locations assumed here.
+A couple things would likely need an outside vendor: threaded inserts for the PETG panels (printed threads wear out fast), and the actual sheet metal bending, since most small shops don't have a brake press.
 
 ---
 
