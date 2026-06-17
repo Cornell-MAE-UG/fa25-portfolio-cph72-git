@@ -15,12 +15,12 @@ image: assets/images/shell.png
 
 Two directions were explored for the exterior. Direction A is fast, primitive-based blocking: each component approximated with the closest-fitting cylinder or box, placed quickly to validate the overall envelope and joint layout rather than to look finished. It has no surface refinement, splits, ventilation, or camera integration, it's a blocking pass, not a design.
 
-![Direction A: fast primitive blocking](assets/images/blocky_image.png)
+![Direction A: fast primitive blocking](/assets/images/blocky_image.png)
 *Primitive-based envelope used to validate overall proportions and joint layout before committing to a refined shell.*
 
 Direction B builds on that same envelope but adds smooth filleted transitions between segments, tapered proportions from shoulder to wrist, ventilation slots over the actuator zones, and integrated camera housings at the chest and wrist. It reads as one unified product rather than a stack of separate parts.
 
-![Direction B: refined, form-fitting shell](assets/images/shell.png)
+![Direction B: refined, form-fitting shell](/assets/images/shell.png)
 *Final shell direction, with filleted transitions, ventilation slots over the actuator zones, and integrated camera housings at the chest and wrist.*
 
 Direction B was carried forward. It takes more modeling effort, but it's the only one that actually satisfies the brief, service splits, heat venting, and camera integration are all real requirements Direction A doesn't address. Direction A's value was mainly as a fast sanity check on proportions and joint layout before investing time in the refined surface.
@@ -46,15 +46,15 @@ Direction B was carried forward. It takes more modeling effort, but it's the onl
 
 The shell was built by first creating a simplified internal envelope using Fusion's joint constraints, to validate pose and proportions against the reference geometry. Once that was locked in, the envelope was offset 5mm and shelled to generate the working shell, then clearance cuts, camera openings, and ventilation slots were added on top.
 
-![Envelope with Fusion joint constraints](assets/images/joint_cad.png)
+![Envelope with Fusion joint constraints](/assets/images/joint_cad.png)
 *Internal envelope posed using Fusion's joint constraints, used to validate range of motion and proportions before offsetting into the shell.*
 
-![Final arm shell](assets/images/shell.png)
+![Final arm shell](/assets/images/shell.png)
 *Completed shell after offsetting, shelling, and adding clearance cuts, camera mounts, and ventilation slots.*
 
 In addition to the arm shell, a simple lofted cover was modeled for the base pillar, the vertical structural support beneath the arm, concealing the existing MISUMI aluminum framing beneath a clean tapered shape. Unlike the arm shell, this piece has no joints or curved transitions to account for, so it was modeled directly as a single flat-sided loft rather than through the envelope/offset/shell process used for the arm. It's purely a cosmetic cover at this stage, not a structural part, the actual load-bearing support still comes from the aluminum framing underneath.
 
-![Base pillar cover concept](assets/images/base_shell.png)
+![Base pillar cover concept](/assets/images/base_shell.png)
 *Simple lofted base pillar cover, designed to conceal the existing MISUMI aluminum framing. Flat-sided geometry with no joints or cutouts, well suited to sheet metal fabrication.*
 
 ## 3. Camera & cable integration
