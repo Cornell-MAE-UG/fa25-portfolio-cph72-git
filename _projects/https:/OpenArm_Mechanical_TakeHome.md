@@ -1,14 +1,12 @@
 ---
 layout: project
 title: "OpenArm Mechanical Take Home - Connor Hyde"
-description: You are designing the mechanical exterior and structural integration for our robot
-platform: the OpenArm 2.0 robotic arm (docs: docs.openarm.dev) and a mobile
+description: You are designing the mechanical exterior and structural integration for our robot platform, the OpenArm 2.0 robotic arm (docs: docs.openarm.dev) and a mobile
 manipulator that combines the arm with a wheeled mobile base. The arm carries 4
 cameras (two wrist Arducams, one ceiling Arducam, one ZED stereo head) and routes
 CAN FD wiring internally. The platform is used to collect teleoperation demonstrations
 for robot learning, so the design must look like a clean, credible product while staying
 serviceable and manufacturable in a small-shop / 3D-print + sheet-metal context.
-image:
 ---
 
 ## 1. Industrial design concept
