@@ -109,9 +109,9 @@ In addition to the arm shell, a simple lofted cover was modeled for the base pil
 
 # 3. Camera & cable integration
 
-All four cameras are addressed. The ZED stereo head mounts forward-facing on the chest, clear of joint rotation. One wrist Arducam mounts on the gripper housing; the second is assumed to mirror it on the opposite side. The ceiling Arducam is assumed to mount to the surrounding OpenArm Cell room framing rather than the arm itself.
+All four cameras are addressed. The ZED stereo head can be mounted forward-facing on the central peice, clear of joint rotation. One wrist Arducam mounts on the gripper housing; the second is assumed to mirror it on the opposite side. The ceiling Arducam is assumed to mount to the surrounding OpenArm Cell room framing rather than the arm itself.
 
-Cameras are externally mounted in this pass rather than recessed, simpler for now, though a recessed cutout would protect them better and look more finished with more time.
+Cameras are externally mounted in this pass rather than recessed, simpler for now, though if I had more time I would designing housing featuring a recessed cutout that would protect them better and look more finished.
 
 CAN FD wiring and power route through the shell's hollow interior, sized so internal components can pass through during assembly. Panels are intended to open via snap-fit and magnetic clasps for service access, defined as intent here rather than modeled in detail.
 
