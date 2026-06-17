@@ -23,6 +23,25 @@ image: /assets/images/shell.png
 
 # 1. Industrial design concept
 
+Before modeling, dimensions and joint motion were mapped directly onto reference imagery to establish the working envelope and range of motion ahead of CAD work.
+
+<div style="display: flex; justify-content: center;">
+<table class="design-table">
+  <tr>
+    <th>Dimensional and joint-motion analysis</th>
+    <th>Chest housing and wiring reference</th>
+  </tr>
+  <tr>
+    <td>
+      <img src="{{ "/assets/images/rough_estimating.png" | relative_url }}" alt="Hand-annotated dimensional analysis" width="300">
+    </td>
+    <td>
+      <img src="{{ "/assets/images/partial_sketch.png" | relative_url }}" alt="Chest housing and wiring reference annotation" width="300">
+    </td>
+  </tr>
+</table>
+</div>
+
 Two directions were explored for the exterior. Direction A is fast, primitive-based blocking: each component approximated with the closest-fitting cylinder or box, placed quickly to validate the overall envelope and joint layout rather than to look finished. It has no surface refinement, splits, ventilation, or camera integration, it's a blocking pass, not a design.
 
 <div style="text-align: center;">
