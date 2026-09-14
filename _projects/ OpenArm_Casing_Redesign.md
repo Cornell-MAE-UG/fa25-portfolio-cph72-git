@@ -2,7 +2,7 @@
 layout: project
 title: "OpenArm Casing Redesign – Robotics Center of Silicon Valley"
 description: "Ground-up exterior redesign of the OpenArm 2.0 bimanual robotic arm: angular consumer aesthetics, thermal management, integrated cable locking, and 3D-print production optimized to a single day."
-image: /assets/images/openarm/OpenArm_V2-2.jpeg
+image: /assets/images/openarm/OpenArm_V2.jpeg
 ---
 
 <style>
@@ -10,7 +10,7 @@ image: /assets/images/openarm/OpenArm_V2-2.jpeg
 </style>
 
 <div style="text-align: center;">
-  <img src="{{ "/assets/images/openarm/OpenArm_V2-2.jpeg" | relative_url }}" alt="Finished OpenArm 2.0 with new casing at Robotics Center open house" width="600">
+  <img src="{{ "/assets/images/openarm/OpenArm_V2.jpeg" | relative_url }}" alt="Finished OpenArm 2.0 with new casing at Robotics Center open house" width="600">
 </div>
 
 ---
