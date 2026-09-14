@@ -2,10 +2,10 @@
 layout: project
 title: "MAE2250 Project: SLF Rotating Bug Trap"
 description: "A rotating trap designed to lure spotted lanternflies away from grape vines and reduce vineyard damage."
-image: assets/images/slf-trap-image.png
+image: assets/images/SLF/slf-trap-image.png
 ---
 
-<img src="{{ site.baseurl }}/assets/images/slf-trap-image.png" alt="SLF Rotating Bug Trap" style="float: right; width: 300px; margin-left: 25px; margin-bottom: 15px; border-radius: 8px;">
+<img src="{{ site.baseurl }}/assets/images/SLF/slf-trap-image.png" alt="SLF Rotating Bug Trap" style="float: right; width: 300px; margin-left: 25px; margin-bottom: 15px; border-radius: 8px;">
 
 This project focused on designing a low-cost, scalable rotating trap to reduce spotted lanternfly damage in vineyards. The trap uses attractants to lure SLF toward a rotating reaper wall, which guides them through a peg system and drops them into a collection chamber. By capturing the insects alive, the design improves luring effectiveness over time — SLF are attracted to each other's scents, so a growing captive population compounds capture rate. Prototype testing showed strong performance across all three subsystems, supporting the design's potential for full-scale vineyard use.
 
@@ -40,7 +40,7 @@ All three subsystem tests exceeded the minimum passing threshold of 80.
 
 ## Project Poster
 
-<img src="{{ site.baseurl }}/assets/images/SLFCrushersPoster.png" 
+<img src="{{ site.baseurl }}/assets/images/SLF/SLFCrushersPoster.png" 
      alt="SLF Crushers Poster" 
      style="width: 500px; max-width: 100%; height: auto; display: block; margin: 20px auto;">
 
