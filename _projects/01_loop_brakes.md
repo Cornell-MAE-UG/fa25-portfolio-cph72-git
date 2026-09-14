@@ -2,7 +2,7 @@
 layout: project
 title: "Hyperloop Pneumatic Dual-Pad Braking System Redesign"
 description: A custom-designed pneumatic braking mechanism developed using CAD, FEA validation, and precision manufacturing.
-image: /assets/images/brakes_assembly.jpeg
+image: /assets/images/brakes/brakes_assembly.jpeg
 ---
 
 <style>
@@ -10,7 +10,7 @@ image: /assets/images/brakes_assembly.jpeg
 </style>
 
 <div style="text-align: center;">
-  <img src="{{ "/assets/images/brakes_assembly.jpeg" | relative_url }}" alt="Final Brake Assembly" width="600">
+  <img src="{{ "/assets/images/brakes/brakes_assembly.jpeg" | relative_url }}" alt="Final Brake Assembly" width="600">
 </div>
 
 ---
@@ -72,15 +72,15 @@ The project included the complete engineering workflow from initial concept gene
 <div class="gallery-slider">
   <div class="gallery-track" id="galleryTrack">
     <div style="min-width: 100%; text-align: center; background: #111;">
-      <img src="{{ "/assets/images/brakes_design.png" | relative_url }}" alt="CAD Model" style="height: 400px; object-fit: contain;">
+      <img src="{{ "/assets/images/brakes/brakes_design.png" | relative_url }}" alt="CAD Model" style="height: 400px; object-fit: contain;">
       <p style="color: #fff; margin: 8px 0; font-weight: bold;">CAD Model</p>
     </div>
     <div style="min-width: 100%; text-align: center; background: #111;">
-      <img src="{{ "/assets/images/ansys_mov.svg" | relative_url }}" alt="Ansys FEA" style="height: 400px; object-fit: contain;">
+      <img src="{{ "/assets/images/brakes/ansys_mov.svg" | relative_url }}" alt="Ansys FEA" style="height: 400px; object-fit: contain;">
       <p style="color: #fff; margin: 8px 0; font-weight: bold;">FEA</p>
     </div>
     <div style="min-width: 100%; text-align: center; background: #111;">
-      <img src="{{ "/assets/images/brakes_assembly.jpeg" | relative_url }}" alt="Final Assembly" style="height: 400px; object-fit: contain;">
+      <img src="{{ "/assets/images/brakes/brakes_assembly.jpeg" | relative_url }}" alt="Final Assembly" style="height: 400px; object-fit: contain;">
       <p style="color: #fff; margin: 8px 0; font-weight: bold;">Final Assembly</p>
     </div>
   </div>
@@ -154,12 +154,12 @@ The brake system was initially developed through iterative CAD modeling and mech
   </tr>
   <tr>
     <td>
-      <img src="{{ "/assets/images/early_design.png" | relative_url }}" alt="Early CAD Design" width="300"><br>
-      <img src="{{ "/assets/images/old_design_rails.png" | relative_url }}" alt="Old Design on Rails" width="300">
+      <img src="{{ "/assets/images/brakes/early_design.png" | relative_url }}" alt="Early CAD Design" width="300"><br>
+      <img src="{{ "/assets/images/brakes/old_design_rails.png" | relative_url }}" alt="Old Design on Rails" width="300">
     </td>
     <td>
-      <img src="{{ "/assets/images/brakes_design.png" | relative_url }}" alt="Brake CAD Assembly" width="300"><br>
-      <img src="{{ "/assets/images/Brakes_Cad_w_rail.png" | relative_url }}" alt="Brakes on Rails" width="300">
+      <img src="{{ "/assets/images/brakes/brakes_design.png" | relative_url }}" alt="Brake CAD Assembly" width="300"><br>
+      <img src="{{ "/assets/images/brakes/Brakes_Cad_w_rail.png" | relative_url }}" alt="Brakes on Rails" width="300">
     </td>
   </tr>
 </table>
@@ -200,12 +200,12 @@ Finite element analysis was conducted in ANSYS to evaluate stress distribution, 
   </tr>
   <tr>
     <td>
-      <img src="{{ "/assets/images/FOS_brakes.png" | relative_url }}" alt="ANSYS FOS Analysis" width="300" style="display: block; margin: 0 auto 16px auto;"><br>
-      <img src="{{ "/assets/images/FOS_brakes_scale.png" | relative_url }}" alt="ANSYS FOS Scale" width="150" style="display: block; margin: 0 auto;">
+      <img src="{{ "/assets/images/brakes/FOS_brakes.png" | relative_url }}" alt="ANSYS FOS Analysis" width="300" style="display: block; margin: 0 auto 16px auto;"><br>
+      <img src="{{ "/assets/images/brakes/FOS_brakes_scale.png" | relative_url }}" alt="ANSYS FOS Scale" width="150" style="display: block; margin: 0 auto;">
     </td>
     <td>
-      <img src="{{ "/assets/images/Ansys_image(new).jpg" | relative_url }}" alt="ANSYS Deformation Plot" width="300" style="display: block; margin: 0 auto 16px auto;"><br>
-      <img src="{{ "/assets/images/ansys_mov.svg" | relative_url }}" alt="ANSYS Deformation Animation" width="300" height="292" style="display: block; margin: 0 auto;">
+      <img src="{{ "/assets/images/brakes/Ansys_image(new).jpg" | relative_url }}" alt="ANSYS Deformation Plot" width="300" style="display: block; margin: 0 auto 16px auto;"><br>
+      <img src="{{ "/assets/images/brakes/ansys_mov.svg" | relative_url }}" alt="ANSYS Deformation Animation" width="300" height="292" style="display: block; margin: 0 auto;">
     </td>
   </tr>
 </table>
@@ -229,7 +229,7 @@ Following the design validation process, the brake system components were manufa
 
 
 <div style="text-align: center;">
-  <img src="{{ "/assets/images/no_pads_assembly.jpg" | relative_url }}" alt="Partial Assembly" width="450" style="border: 1px solid #ccc; border-radius: 8px; padding: 12px;">
+  <img src="{{ "/assets/images/brakes/no_pads_assembly.jpg" | relative_url }}" alt="Partial Assembly" width="450" style="border: 1px solid #ccc; border-radius: 8px; padding: 12px;">
 </div>
 
 The components were machined from aluminum stock using manual mills and manual lathes. Operations included milling, turning, drilling, and tapping, with additional finishing operations such as chamfering and countersinking. Raw stock was cut to size using a bandsaw prior to machining. All components were machined to a tolerance of ±0.05 in, with over 20 shop hours invested in fabrication.
@@ -324,7 +324,7 @@ of pneumatic circuit behavior. A housing carriage is also being designed to pack
 components within the pod's volume constraints.
 
 <div style="text-align: center;">
-  <img src="{{ "/assets/images/pneumatic_map.jpg" | relative_url }}" alt="Planned Pneumatic Circuit" width="450" style="border: 1px solid #ccc; border-radius: 8px; padding: 12px;">
+  <img src="{{ "/assets/images/brakes/pneumatic_map.jpg" | relative_url }}" alt="Planned Pneumatic Circuit" width="450" style="border: 1px solid #ccc; border-radius: 8px; padding: 12px;">
 </div>
 
 Remaining steps include:
@@ -333,6 +333,3 @@ Remaining steps include:
 - Test pneumatic actuation and verify braking performance
 - Design and finalize mounting for both the brake assembly and pneumatic carriage
 - Detail drawings for all machined components
-
-
-
