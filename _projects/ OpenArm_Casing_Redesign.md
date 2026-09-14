@@ -2,7 +2,7 @@
 layout: project
 title: "OpenArm Casing Redesign – Robotics Center of Silicon Valley"
 description: "Ground-up exterior redesign of the OpenArm 2.0 bimanual robotic arm: angular consumer aesthetics, thermal management, integrated cable locking, and 3D-print production optimized to a single day."
-image: /assets/images/openarm/openarm_V2.jpg
+image: /assets/images/openarm/openarm_V2-2.jpg
 ---
 
 <style>
