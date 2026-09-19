@@ -299,7 +299,7 @@ The components were machined from aluminum stock using manual mills and manual l
   <div class="video-modal-box">
     <button class="video-modal-close" onclick="closeVideo()">✕</button>
     <video id="modalVideo" controls muted controlslist="novolume" width="100%">
-      <source src="{{ "assets/video/movement_vid(new).mp4" | relative_url }}" type="video/mp4">
+      <source src="{{ "assets/video/brakes/movement_vid(new).mp4" | relative_url }}" type="video/mp4">
     </video>
   </div>
 </div>
